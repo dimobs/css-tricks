@@ -1,17 +1,26 @@
-section.follow__me{
-   position: relative;
-    width: 85px;
-    height: 50px;
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+  justify-content: center;
+  padding-top: 50px;
+
+}
+
+section {
+   height: 300px;
+    width: 40%;
     background: rgb(189, 189, 182);
     border: 0.2px solid black;
-    padding-left: 20px;
 }
 
 p.follow {
+    padding-left: 80px;
     /* position: absolute; */
    color: #fff;
    font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
-font-size: 1em;
+font-size: 5em;
 font-weight: 700;
 /* background-color: red; */
 /* align-items: center;
