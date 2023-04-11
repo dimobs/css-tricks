@@ -1,0 +1,32 @@
+p.follow {
+   color: #fff;
+   font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+font-size: 1em;
+font-weight: 700;
+background-color: red;
+}
+
+p.follow span {
+    display: inline-block;
+position: relative;
+transform-style: preserve-3d;
+perspective: 500;
+-webkit-font-smooting: antialiased;
+}
+
+p.follow span::before,
+p.follow span::after {
+/* display: none; */
+position: absolute;
+top:0;
+left: -1px;
+transform-origin: left top;
+transition: all ease-out 0.3s;
+content: attr(follow-data-text);
+}
+
+p.follow span::before {
+    z-index: 1;
+    color: rgba(0,0,0,0.2);
+    transform: scale(1.1, 1) skew(0deg, 20deg);
+}
