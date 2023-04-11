@@ -1,9 +1,21 @@
+section.follow__me{
+   position: relative;
+    width: 85px;
+    height: 50px;
+    background: rgb(189, 189, 182);
+    border: 0.2px solid black;
+    padding-left: 20px;
+}
+
 p.follow {
+    /* position: absolute; */
    color: #fff;
    font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
 font-size: 1em;
 font-weight: 700;
-background-color: red;
+/* background-color: red; */
+/* align-items: center;
+justify-content: center; */
 }
 
 p.follow span {
@@ -30,3 +42,46 @@ p.follow span::before {
     color: rgba(0,0,0,0.2);
     transform: scale(1.1, 1) skew(0deg, 20deg);
 }
+
+p.follow span::after {
+    z-index: 2;
+    color: #684da3;
+    text-shadow: -1px 0 1px #684da3, 1px 0 1px rgba(0,0,0,0.8);
+    transform: rotateY(-40deg);
+  }
+
+  p.follow span:hover::before {
+    transform: scale(1.1, 1) skew(0deg, 5deg);
+  }
+
+  p.follow span:hover::after {
+    transform: rotateY(-10deg);
+  }
+
+  p.follow span + span {
+    margin-left: 0.3em;
+  }
+  @media (min-width: 20em) {
+    p {
+      font-size: 2em;
+    }
+    p span::before,
+    p span::after {
+      display: block;
+    }
+  }
+  @media (min-width: 30em) {
+    p {
+      font-size: 3em;
+    }
+  }
+  @media (min-width: 40em) {
+    p {
+      font-size: 5em;
+    }
+  }
+  @media (min-width: 60em) {
+    p {
+      font-size: 8em;
+    }
+  }
