@@ -1,0 +1,45 @@
+:root {
+    --size: 400px;
+    --blue: #aad5ff;
+    --lb: rgba(0, 0, 0, 0.5);
+  }
+  body {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    background-color: var(--blue);
+    color: cornsilk;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .container {
+    width: var(--size);
+    height: var(--size);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 7px rgba(1, 1, 1, .7));
+  }
+  .productImage {
+    grid-column: 1/span 2;
+    grid-row: 1 /span 2;
+    width: var(--size);
+    height: var(--size);
+    background-size: cover;
+    clip-path: polygon(
+      20% 20%,
+      50% 20%,
+      50% 20%,
+      80% 20%,
+      80% 50%,
+      80% 50%,
+      80% 80%,
+      50% 80%,
+      50% 80%,
+      20% 80%,
+      20% 50%,
+      20% 50%
+    );
+    transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  }
