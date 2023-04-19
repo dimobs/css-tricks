@@ -1,3 +1,6 @@
-let arr = [22, 33, 4, 5 , 5, 6,6]
-let unicArr = [...new Set(arr)]
-console.log(unicArr);
+let headerArray = [1, 3, 4, 5, 6, 6, 5];
+
+for (let i = 1; i < 15; i++) {
+
+
+}
