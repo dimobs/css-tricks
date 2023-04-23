@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  background-image: linear-gradient(#252525, #0c0c0c);
+
+}
+
+.radar {
+    position: relative;
+    width: 60vmin;
+    height: 60vmin;
+  background: repeating-radial-gradient(transparent, transparent 4.5%, rgba(80, 255, 0, 0.35) 5%, transparent 5.5%) content-box, linear-gradient(transparent 49.7%, rgba(80, 255, 0, 0.2) 49.9%, rgba(80, 255, 0, 0.2) 50.1%, transparent 50.3%) content-box, linear-gradient(to right, transparent 49.7%, rgba(80, 255, 0, 0.2) 49.9%, rgba(80, 255, 0, 0.2) 50.1%, transparent 50.3%) content-box, radial-gradient(#002500, #000500) content-box, linear-gradient(to bottom right, #ccc, #666) border-box;
+  border: 2.5vmin;
+  border-radius: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  filter: drop-shadow(1vmin 1vmin 1vmin rgba(0,0,0, 0.4));
+
+}
