@@ -45,7 +45,7 @@ body {
     width: 100%;
   }
 
-  /* .input-field textarea {
+  .input-field textarea {
     height: 100%;
     width: 100%;
     outline: none;
@@ -55,4 +55,4 @@ body {
     padding: 18px 45px 18px 15px;
     border: 1px solid #ccc;
     resize: none;
-  } */
+  }
