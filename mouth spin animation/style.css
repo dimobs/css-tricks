@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    height: calc(100vh - 5em);
+    padding: 2.5em;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #a28ef2;
+    font-family: "Monaco", monospace;
+  }
+  .content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+  }
+
+.face {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100%;
+  font-size: clamp(80px, 30vw, 200px);
+}
