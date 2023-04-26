@@ -21,6 +21,8 @@ a {
 border-radius: 30px;
 background-size: 400%;
 z-index: 1;
+/* -webkit-transform: rotate(-45deg); */
+/* transform: rotate(-45deg); */
 }
 
 a:hover {
