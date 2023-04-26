@@ -23,3 +23,26 @@ body {
   flex: 1 1 100%;
   font-size: clamp(80px, 30vw, 200px);
 }
+.controls {
+    margin-top: auto;
+  }
+  #mouth {
+    transform: translatey(0.25em);
+  }
+  button {
+    font-size: 3.25em;
+    font-weight: 500;
+    padding: 0.25em 4em;
+    background-color: #000;
+    background-clip: padding-box;
+    color: #633838;
+    border-radius: 10.3em;
+    -moz-outline-radius: 0.3em;
+    /* resets */
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: inherit;
+    transition: all 0.1s ease-in-out;
+  }
