@@ -17,14 +17,14 @@ function animateMouths(repeat) {
 	if (repeat > 0) {
 		setTimeout( () => {
 			animateMouths(repeat);
-		}, 100);
+		}, 300);
 	}
 }
 
-function shuffleMouths(repeat) {
+function shuffleMouths(repeat) { //5
 //	console.log('shuffleMouths: ', repeat);
-	shuffleArray(mouths);
-	animateMouths(repeat);
+	shuffleArray(mouths); //[...]
+	animateMouths(repeat); //5
 }
 
 button.addEventListener('click', () => {
