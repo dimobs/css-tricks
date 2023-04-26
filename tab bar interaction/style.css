@@ -73,3 +73,30 @@ nav .tubelight {
     background-color: white;
     transition: left 1400ms ease;
 }
+nav .tubelight .light-ray {
+    position: absolute;
+    left: -30%;
+    top: 5px;
+    width: 160%;
+    height: 80px;
+    clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) -50%, rgba(255, 255, 255, 0) 90%);
+    pointer-events: none;
+  }
+  .support {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    display: flex;
+  }
+  .support a {
+    margin: 0 10px;
+    color: #222;
+    font-size: 1.8rem;
+    backface-visibility: hidden;
+    transition: all 150ms ease;
+  }
+  .support a:hover {
+    transform: scale(1.1);
+  }
