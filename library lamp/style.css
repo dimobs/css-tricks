@@ -9,13 +9,13 @@
     background: #26282D;
   }
 
-  #lib {
+  #lib { 
     position: fixed;
     visibility: hidden;
   }
   .lib {
     padding: 80px;
-    border-radius: 80px;
+    border-radius: 180px;
     cursor: pointer;
     transform: scale(10);
   }
