@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #26282D;
+  }
+
+  #lib {
+    position: fixed;
+    visibility: hidden;
+  }
+  .lib {
+    padding: 80px;
+    border-radius: 80px;
+    cursor: pointer;
+    transform: scale(10);
+  }
+  .lib svg {
+    display: block;
+  }
+  .lib svg path {
+    transition: all 6.3s ease;
+  }
+  .lib svg path.onoff {
+    opacity: 0.8;
+  }
+  .lib svg path.shine {
+    opacity: 0;
+  }
+  .lib svg path.lamp {
+    opacity: 0;
+  }
+  .lib:hover {
+    background: rgba(0, 0, 0, 0.12);
+  }
+  #lib:checked + .lib svg path:not(.shine, .lamp) {
+    stroke: #C1B971;
+  }
+  #lib:checked + .lib svg path.onoff {
+    animation: updown 0.4s linear forwards;
+  }
+  #lib:checked + .lib svg path.shine {
+    opacity: 1;
+  }
+  #lib:checked + .lib svg path.lamp {
+    opacity: 1;
+  }
+  @keyframes updown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
