@@ -53,17 +53,21 @@ html, body {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay: 1s;
-  }
+     }
   .bottom p {
     bottom: 0px;
   }
   .top {
     height: 32px;
     animation-name: goUp; 
+    /* animation: goUp 2.5s infinite; */
   }
   .bottom {
     height: 41px;
     animation-name: goDown;
+    /* animation: goDown 2.5s infinite; */
+
+
   }
 
   .sub-text p {
