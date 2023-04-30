@@ -30,6 +30,7 @@ section .lamp {
     --pommel-cy: 280px;
     --bulb-fill: #ff0;
     --glow-fill: url(#light);
+    filter: brightness(30%); 
   }
 
   section img {
