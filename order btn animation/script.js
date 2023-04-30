@@ -94,7 +94,7 @@ document.querySelectorAll('.truck-button').forEach(button => {
                 x: -24,
                 y: -6
             });
-        }
+        }q
 
     });
 });
