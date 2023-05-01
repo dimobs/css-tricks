@@ -90,7 +90,7 @@ body {
   article #mercury {
     background-color: white;
     position: fixed;
-    z-index: 199;
+    z-index: 99;
     top: 38px;
     display: flex;
     width: 24.397px; /* ✑ real radius of mercury: 24397km */
@@ -101,6 +101,52 @@ body {
     -ms-animation: planets-rotation 29.3225s linear infinite;
     -o-animation: planets-rotation 29.3225s linear infinite;
     animation: planets-rotation 29.3225s linear infinite;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--planets-theme);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--hidden-red);
+    justify-content: center;
+    align-items: center;
+  }
+  article #venus {
+    position: fixed;
+    z-index: 99;
+    top: 15px;
+    display: flex;
+    width: 60.518px; /* ✑ real radius of venus: 60518km */
+    height: 60.518px;
+    /* ✑ rotation period of venus 243.023 days */
+    -webkit-animation: planets-rotation 121.513s linear infinite;
+    -moz-animation: planets-rotation 121.513s linear infinite;
+    -ms-animation: planets-rotation 121.513s linear infinite;
+    -o-animation: planets-rotation 121.513s linear infinite;
+    animation: planets-rotation 121.513s linear infinite;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--planets-theme);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--hidden-red);
+    justify-content: center;
+    align-items: center;
+  }
+  article #earth {
+    position: fixed;
+    z-index: 99;
+    top: 35px;
+    display: flex;
+    width: 63.71px; /* ✑ real radius of the earth: 6371km */
+    height: 63.71px;
+    /* ✑ animation-duration: .5s = 24hours on earth */
+    -webkit-animation: planets-rotation 0.4874s linear infinite;
+    -moz-animation: planets-rotation 0.4874s linear infinite;
+    -ms-animation: planets-rotation 0.4874s linear infinite;
+    -o-animation: planets-rotation 0.4874s linear infinite;
+    animation: planets-rotation 0.4874s linear infinite;
     border-width: 2px;
     border-style: solid;
     border-color: var(--planets-theme);
