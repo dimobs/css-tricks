@@ -1,0 +1,88 @@
+:root {
+    --dark-color: rgb(0, 0, 0);
+    --glossy-red: rgba(238, 17, 17, 1);
+    --hidden-red: rgba(238, 17, 17, 0);
+    --light-red: rgba(238, 17, 17, 0.5);
+    --paths-theme: var(--very-light-red) var(--glossy-red);
+    --planets-theme: var(--light-red) var(--light-red) var(--light-red)
+      var(--glossy-red);
+    --very-light-red: rgba(238, 17, 17, 0.25);
+  }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    overflow: hidden;
+    background-color: var(--dark-color);
+  }
+  body #solar-system {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* -webkit-transform: skewX(-45deg); */
+    /* -moz-transform: skewX(-45deg); */
+    /* -ms-transform: skewX(-45deg); */
+    /* -o-transform: skewX(-45deg); */
+    transform: skewX(-45deg);
+    /* -webkit-transform-origin: center; */
+    /* -moz-transform-origin: center; */
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+  }
+  section #sun {
+    position: fixed;
+    z-index: 100;
+    /* ✑ real radius of the sun: 696340km */
+    width: 174.085px; /* ✑ 40* too small compared to the real planets dimensions values */
+    height: 174.085px;
+    /* -webkit-transform: skewX(45deg);  */
+    /* -moz-transform: skewX(45deg); */
+    /* -ms-transform: skewX(45deg); */
+    /* -o-transform: skewX(45deg); */
+    transform: skewX(45deg);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--glossy-red);
+    background: linear-gradient(
+      135deg,
+      var(--glossy-red) 20%,
+      var(--hidden-red) 100%
+    );
+    -webkit-background: linear-gradient(
+      135deg,
+      var(--glossy-red) 20%,
+      var(--hidden-red) 100%
+    );
+    -moz-background: linear-gradient(
+      135deg,
+      var(--glossy-red) 20%,
+      var(--hidden-red) 100%
+    );
+    -o-background: linear-gradient(
+      135deg,
+      var(--glossy-red) 20%,
+      var(--hidden-red) 100%
+    );
+    -ms-background: linear-gradient(
+      135deg,
+      var(--glossy-red) 20%,
+      var(--hidden-red) 100%
+    );
+    filter: drop-shadow(0 0 2rem var(--glossy-red)) blur(1px);
+    -webkit-filter: drop-shadow(0 0 2rem var(--glossy-red)) blur(1px);
+    -moz-filter: drop-shadow(0 0 2rem var(--glossy-red)) blur(1px);
+    -o-filter: drop-shadow(0 0 2rem var(--glossy-red)) blur(1px);
+    -ms-filter: drop-shadow(0 0 2rem var(--glossy-red)) blur(1px);
+  }
