@@ -86,3 +86,28 @@ body {
     -o-filter: drop-shadow(0 0 2rem var(--glossy-red)) blur(1px);
     -ms-filter: drop-shadow(0 0 2rem var(--glossy-red)) blur(1px);
   }
+
+  article #mercury {
+    background-color: white;
+    position: fixed;
+    z-index: 199;
+    top: 38px;
+    display: flex;
+    width: 24.397px; /* ✑ real radius of mercury: 24397km */
+    height: 24.397px;
+    /* ✑ rotation period of mercury: 58.645 days */
+    -webkit-animation: planets-rotation 29.3225s linear infinite;
+    -moz-animation: planets-rotation 29.3225s linear infinite;
+    -ms-animation: planets-rotation 29.3225s linear infinite;
+    -o-animation: planets-rotation 29.3225s linear infinite;
+    animation: planets-rotation 29.3225s linear infinite;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--planets-theme);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--hidden-red);
+    justify-content: center;
+    align-items: center;
+  }
