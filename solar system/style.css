@@ -343,7 +343,6 @@ section #mars-trajectory {
 /*
 ▀▄▀▄▀▄▀▄▀▄▀▄ ANIMATIONS ▀▄▀▄▀▄▀▄▀▄▀▄
 */
-
 @keyframes solar-revolution {
   to {
     transform: rotate(360deg);
