@@ -12,5 +12,5 @@ gallery.forEach(g => {
         this.classList.add('active')
         bg.style.backgroundImage = `url('${imgSrc}')`
         mobileBody.style.backgroundImage = `url('${imgSrc}')`
-    })
-})
+    });
+});
