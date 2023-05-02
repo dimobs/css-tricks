@@ -2,6 +2,7 @@ html {
     /* font-size: 62.5%; */
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body {
     background: lightgray;
@@ -38,18 +39,17 @@ body {
   }
   .gallery-content {
     position: fixed;
-    bottom: 0;
+    bottom: 55px;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
     z-index: 1;
-    background-color: black;
+    background-color: rgb(160, 113, 113);
     height: 7.5rem;
     display: flex;
     align-items: center;
-    padding: 0 3rem;
     justify-content: space-between;
-    align-items: center;
+    padding: 0 3rem;
     transform: translateY(7.5rem);
     transition: all 1s;
     overflow: auto;
@@ -66,8 +66,8 @@ body {
     overflow: hidden;
 }
 .gallery-content__img.active {
-  border-width: 0.2rem;
-  border-color: purple;
+  border-width: 2rem;
+  border-color: rgb(18, 14, 18);
 }
 .gallery-content__img:last-child {
     margin-right: 0;
@@ -179,7 +179,6 @@ body {
   .mobile-body .camera {
     position: absolute;
     bottom: 1.1rem;
-    right: 4.5rem;
     right: 4.5rem;
     width: 1rem;
     height: 1rem;
