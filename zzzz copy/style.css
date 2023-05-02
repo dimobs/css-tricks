@@ -1,0 +1,35 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background: lightgray;
+    font-size: 1.4rem;
+}
+.workspace {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.workspace.active .gallery-content {
+    transform: translateY(0);
+  }
+  .workspace.active .mobile-body {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  .bg-content {
+    position: absolute;
+    left: -1rem;
+    right: -1rem;
+    top: -1rem;
+    bottom: -1rem;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/830072/bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1rem);
+    transition: all 0.5s;
+  }
