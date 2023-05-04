@@ -27,7 +27,9 @@
   .puddle {
     position: absolute;
     display: flex;
-    transform: rotate(var(--r, 0deg)) translate(calc(-50% - var(--x, 0)), calc(-50% - var(--y, 0)));
+    transform: rotate(var(--r, 0deg)) 
+    translate(calc(-50% - var(--x, 0)), 
+    calc(-50% - var(--y, 0)));
     top: 50%;
     left: 50%;
     color: var(--text-color);
