@@ -1,7 +1,7 @@
 let t1 = gsap.timeline();
 let t2 = gsap.timeline();
 let t3 = gsap.timeline();
-
+console.log(gsap.timeline);
 t1.to(".cog1",
 {
   transformOrigin:"50% 50%",

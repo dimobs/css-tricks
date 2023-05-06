@@ -32,6 +32,7 @@ body{
     border-radius:50%;
     border:6vmin solid #f3c623;
     position: relative;
+    display: flex;
   }
 
   
@@ -101,20 +102,38 @@ h1{
   }
   .first-four{
     position: relative;
-    left:6vmin;
+    left:1vmin;
     font-size:40vmin;
   }
   .second-four{
     position: relative;
-    right:18vmin;
+    right:10vmin;
     z-index: -1;
     font-size:40vmin;
   }
   .wrong-para{
+    font-size: 64px;
     font-family: "Montserrat", sans-serif;
     position: absolute;
     bottom:15vmin;
     padding:3vmin 12vmin 3vmin 3vmin;
     font-weight:600;
     color:#092532;
+  }
+
+  .container .eye {
+      border: 53px solid black;
+      border-radius: 50%;
+      width:110%;
+      height:110%;
+      position: absolute;
+  }
+
+  .container .cog-wheel2 .circle__right {
+left: -12px;
+bottom: -12px;
+  }
+  .container .cog-wheel1 .circle__left {
+    left: -12px;
+    bottom: -12px;
   }
