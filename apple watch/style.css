@@ -1,0 +1,38 @@
+:root {
+    --light-hue: 260deg;
+    --light-saturation: 100%;
+    --light-power: 80%;
+    /* Commend this to disable auto color switch */
+    animation: color 20s linear infinite;
+  }
+  .Watch {
+    --dimmer: clamp(10%, var(--light-power), 40%);
+    --light: var(--light-hue) calc(var(--light-saturation) - 40%)
+      calc(var(--light-power) + 35%);
+    --light-dimmed: var(--light-hue) calc(var(--light-saturation) - 90%)
+      var(--dimmer);
+    --light-dark: var(--light-hue) var(--light-saturation)
+      calc(var(--light-power) / 10);
+    filter: drop-shadow(0 10px 50px hsl(0deg 0% 0% / 60%));
+  }
+  /* Strap */
+.Strap {
+    position: relative;
+    box-shadow: inset 0 10vmax 2vmax -10vmax hsl(260deg 50% 0% / 15%);
+    box-shadow: inset 0 10vmax 2vmax -10vmax hsl(var(--light-hue) 50% 0% / 15%);
+    background: linear-gradient(
+        to bottom,
+        hsl(0deg 0% 100% / 8%),
+        hsl(var(--light) / 15%)
+      ),
+      hsl(var(--light-dark));
+    height: 16vmax;
+    width: 70%;
+    margin: 0 auto;
+    z-index: -2;
+    border-radius: 50% 50% 0% 0% / 30% 30% 0 0;
+    /* Reflect stripe */
+    &[reflect="true"] {
+      transform: scaleY(-1);
+    }
+  
