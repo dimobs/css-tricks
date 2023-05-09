@@ -1,0 +1,16 @@
+body {
+    width: 100vw;
+    height: 100vh;
+margin: 0;
+background: #34496a;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#webgl {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+}
