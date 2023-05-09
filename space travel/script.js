@@ -15,7 +15,6 @@ function animation() {
       x: -30,
       transformOrigin: "left center"
     });
-  
     const eyesTl = gsap
       .timeline({
         repeat: -1,
@@ -496,7 +495,7 @@ function animation() {
     );
   
     let sprite = new THREE.TextureLoader().load(
-      "https://i.postimg.cc/T25jx3S9/circle-05.png"
+    //   "https://i.postimg.cc/T25jx3S9/circle-05.png"
     );
     let starMaterial = new THREE.PointsMaterial({
       size: 2,
