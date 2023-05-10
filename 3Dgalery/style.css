@@ -3,7 +3,7 @@ div#carousel {
     background: #100000; 
     padding-top: 10%; 
     font-size:0; 
-    margin-bottom: 3rem; 
+    margin-bottom: 0rem; 
     overflow: hidden; 
   }
 
@@ -38,3 +38,43 @@ div#carousel ~ span {
   border-bottom: none; 
   line-height: 0; }
 div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+#spinner {
+  animation: nonStop 1.5S infinite;
+}
+
+
+
+
+/* @keyframes nonStop {
+0% {
+transform: translateX(-50%) rotate(40deg);
+}
+50% {
+transform: translateX(-50%) rotate(-40deg);
+}
+100% {
+transform: translateX(-50%) rotate(40deg);
+}
+} */
+
+@keyframes nonStop {
+  0% {
+    transform:translate(0px, 0px);
+  }
+  20% {
+    transform: translate(-50px, -50px);
+  }
+  40% {
+    transform: translate(0px, 50px);
+  }
+  60% {
+    transform: translate(50px, 0px);
+  }
+  80% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+  }
