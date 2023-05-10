@@ -1,1 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+body {
+    margin: 0;
+    color: #34495e;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+.container, 
+.formbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    background: #6fa5f6;
+    flex-direction: column;
+}
+
+.formbox {
+    background-color: #121726;
+    width: 350px;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0.625rem;
+}
+
+.formbox .fa-lock {
+    color: #fff;
+font-size: 1.375rem;
+position: relative;
+margin-right: 0.32125rem;
+}
+
+#myPass {
+    position: relative;
+    width: 180px;
+    margin-right: 0.937rem;
+}
