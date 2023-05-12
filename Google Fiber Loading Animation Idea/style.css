@@ -53,8 +53,6 @@
     animation: ballGravity 5s infinite ease-in-out;
   }
 
-
-
 .squares-container .squares .square:nth-child(1) {
     background: #fabc05;
   }
