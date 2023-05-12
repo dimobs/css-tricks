@@ -21,7 +21,7 @@
     aspect-ratio: 1;
     border-radius: 100%;
     overflow: hidden;
-    filter: url("#blob");
+    /* filter: url("#blob"); */
   }
   body #sunmoon:before {
     content: "";
