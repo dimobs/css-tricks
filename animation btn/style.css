@@ -419,6 +419,7 @@ button {
   .btn-8:after {
     width: 0%;
     height: 2px;
+    transition-delay: 0.2s;
   }
   .btn-8:hover:before {
     height: 100%;
