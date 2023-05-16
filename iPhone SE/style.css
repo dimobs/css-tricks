@@ -44,3 +44,18 @@ html {
     margin: 0 0 60px 0;
     width: var(--iphone-width);
   }
+
+  .sticky-container .iphone img {
+    display: block;
+    width: var(--iphone-width);
+    margin-bottom: var(--iphone-offscreen);
+  }
+
+  .sticky-container .iphone.black {
+    background-color: var(--iphone-black-bg);
+    z-index: 10;
+  }
+
+  .sticky-container .iphone.black h3 {
+    color: var(--iphone-black-text);
+  }
