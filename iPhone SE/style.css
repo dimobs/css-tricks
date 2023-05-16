@@ -59,3 +59,44 @@ html {
   .sticky-container .iphone.black h3 {
     color: var(--iphone-black-text);
   }
+
+  .sticky-container .iphone.white {
+    background-color: var(--iphone-white-bg);
+    z-index: 20;
+    clip-path: inset(100% 0px 0px 0px);
+  }
+
+  .sticky-container .iphone.white h3 {
+    color: var(--iphone-white-text);
+  }
+
+  .sticky-container .iphone.white h3 span {
+    color: var(--iphone-white-text-highlight);
+  }
+
+  .sticky-container .iphone.red {
+    background-color: var(--iphone-red-bg);
+    z-index: 30;
+    clip-path: inset(100% 0px 0px 0px);
+  }
+
+  .sticky-container .iphone.red h3 {
+    color: var(--iphone-red-text);
+  }
+
+  .sticky-container .iphone.red h3 span {
+    color: var(--iphone-red-text-highlight);
+  }
+
+  .sticky-container.no-sticky {
+    position: relative;
+    overflow: visible;
+  }
+
+  .sticky-container.no-sticky .iphone {
+    position: relative;
+  }
+
+  .sticky-container.no-sticky .iphone.red {
+    padding-bottom: calc(var(--iphone-offscreen) * -1);
+  }
