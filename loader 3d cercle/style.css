@@ -1,0 +1,16 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #454954;
+    --fg: #e3e4e8;
+    --fg-t: rgba(227, 228, 232, 0.5);
+    --primary1: #255ff4;
+    --primary2: #5583f6;
+    --trans-dur: 0.3s;
+    font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+  }
