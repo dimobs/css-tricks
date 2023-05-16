@@ -99,4 +99,5 @@ html {
 
   .sticky-container.no-sticky .iphone.red {
     padding-bottom: calc(var(--iphone-offscreen) * -1);
-  }
+/* clip-path: inset(50%);  */
+}
