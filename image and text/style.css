@@ -22,3 +22,42 @@ strong {
 .canvas-wrapper {
     background-color: red;
 }
+
+.canvas-wrapper .canvas + .canvas {
+    margin-left: 40px;
+}
+
+.canvas {
+    background-color: blue;
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.canvas_border {
+    position: absolute;
+    top: 40px;
+    left: -40px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.canvas_border svg {
+    height: 100%;
+    width: 100%;
+}
+
+.rect-gradient {
+    .rect-gradient {
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        -webkit-animation: erase-line 1s ease-in-out forwards;
+                animation: erase-line 1s ease-in-out forwards;
+      }
+}
+
