@@ -112,3 +112,15 @@ strong {
   .canvas_copy_title:nth-child(2) {
     transition-delay: 0.2s;
   }
+
+  .canvas_copy_subtitle {
+    display: block;
+    transform: rotate(270deg) translateY(-100%) translateX(calc(-100% - 80px));
+    transform-origin: top left;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-size: 24px;
+    font-weight: 900;
+    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.35s;
+  }
