@@ -124,3 +124,25 @@ strong {
     font-weight: 900;
     transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.35s;
   }
+
+  .canvas_copy_details {
+    display: block;
+    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.14s;
+    transform: translateX(-80px);
+  }
+
+  .canvas_border, .canvas_img-wrapper, .canvas_img {
+    transition: all 0.25s ease-in-out 0s;
+  }
+  
+  .canvas_border, .canvas_img-wrapper {
+    transform: rotate(-10deg) skew(-10deg);
+  }
+  
+  .canvas_copy_title, .canvas_copy_subtitle, .canvas_copy_details {
+    opacity: 0;
+  }
+
+  .canvas:hover .canvas_copy_title, .canvas:hover .canvas_copy_subtitle, .canvas:hover .canvas_copy_details, .canvas:hover .canvas_img {
+    opacity: 1;
+  }
