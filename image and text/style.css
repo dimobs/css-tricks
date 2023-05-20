@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,900");
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #eee;
+    padding: 100px 60px;
+    -webkit-animation: fade-in 3s ease-in-out forwards;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.canvas-wrapper {
+    background-color: red;
+}
