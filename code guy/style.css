@@ -435,3 +435,17 @@ body {
     border-radius: 0 100px 100px 0;
     background-color: #879ed0;
   }
+
+  .mouth {
+    width: 18px;
+    height: 8px;
+    border-radius: 0 0 50px 50px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 11px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 12;
+  }
+  
