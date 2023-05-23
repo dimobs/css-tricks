@@ -141,7 +141,6 @@ body {
     }
   }
 
-  
   .body {
     width: 70px;
     height: 40px;
@@ -153,4 +152,104 @@ body {
     transform: translateX(-50%);
     border-radius: 50px 50px 0 0;
     background-color: #36508a;
+  }
+
+  .body:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 50px 50px 0 0;
+    background-color: #4563a5;
+    bottom: 5px;
+  }
+  
+  .neck {
+    width: 26px;
+    height: 26px;
+    background-color: #f6d2be;
+    border-radius: 0 0 50px 50px;
+    bottom: 4px;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .face {
+    background-color: #f6d2be;
+    width: 78px;
+    border-radius: 0 0 50px 50px;
+    height: 58px;
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  .face:after {
+    background-color: #fddac5;
+    width: 68px;
+    border-radius: 0 0 50px 50px;
+    height: 52px;
+    content: "";
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+  }
+  
+  .eye {
+    width: 12px;
+    height: 12px;
+    background-color: #533d34;
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    z-index: 5;
+    border-radius: 50px;
+  }
+
+  .eye:nth-child(2) {
+    left: auto;
+    right: 15px;
+  }
+  
+  .eye:after {
+    content: "";
+    width: 16px;
+    left: -2px;
+    height: 14px;
+    background-color: #fddac5;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation: eyeMove 3500ms cubic-bezier(0.4, 0, 1, 1) infinite
+      alternate;
+    animation: eyeMove 3500ms cubic-bezier(0.4, 0, 1, 1) infinite alternate;
+  }
+  
+  @-webkit-keyframes eyeMove {
+    0% {
+      -webkit-transform: translateY(16px) translateZ(0);
+    }
+    15% {
+      -webkit-transform: translateY(16px) translateZ(0);
+    }
+    30% {
+      -webkit-transform: translateY(16px) translateZ(0);
+    }
+    45% {
+      -webkit-transform: translateY(16px) translateZ(0);
+    }
+    60% {
+      -webkit-transform: translateY(4px) translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateY(4px) translateZ(0);
+    }
   }
