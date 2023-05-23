@@ -211,3 +211,19 @@
     background: #fefefe;
     height: 28px;
   }
+
+  .menu__list .menu__item:nth-child(2):after {
+    border-color: #bdf3e1;
+  }
+  .menu__list .menu__item:nth-child(3):after {
+    border-color: #ffe87d;
+  }
+  .menu__list .menu__item:nth-child(3):after {
+    border-color: #d19485;
+  }
+  .menu__list .menu__item:nth-child(5):after {
+    border-color: #8ee0c5;
+  }
+  .menu__list .menu__item:nth-child(6):after {
+    border-color: #f7c6c5;
+  }
