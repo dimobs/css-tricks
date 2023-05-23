@@ -107,7 +107,6 @@
     right: 0;
     width: 198px;
   }
-
   .body .bottom .board .front:before {
     content: "";
     position: absolute;
@@ -118,7 +117,6 @@
     background: #fefefe;
     border-radius: 5px;
   }
-
   .body .bottom:after {
     content: "";
     position: absolute;
@@ -130,7 +128,6 @@
     border-radius: 10px;
     z-index: 2;
   }
-
   .body .light {
     position: absolute;
     top: 50px;
@@ -141,7 +138,6 @@
     border-radius: 50%;
     z-index: 0;
   }
-
   .window {
     width: 70px;
     height: 65px;
@@ -152,7 +148,6 @@
     border-radius: 8px;
     overflow: hidden;
   }
-
   .window:before {
     content: "";
     position: absolute;
@@ -165,11 +160,9 @@
     transform: rotate(45deg);
     box-shadow: -30px 0 0 -10px;
   }
-
   .window.back {
     left: 20px;
   }
-
   .window.front {
     left: 110px;
   }
@@ -200,18 +193,23 @@
     background: #fefefe;
     color: #fff;
   }
-
   .menu__list .menu__item {
     position: relative;
     background: #fefefe;
     height: 28px;
   }
-  .menu__list .menu__item {
-    position: relative;
+  .menu__list .menu__item:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
     background: #fefefe;
-    height: 28px;
+    border-radius: 100%;
+    border: 8px solid #f1aca8;
+    box-sizing: border-box;
   }
-
   .menu__list .menu__item:nth-child(2):after {
     border-color: #bdf3e1;
   }
@@ -227,7 +225,6 @@
   .menu__list .menu__item:nth-child(6):after {
     border-color: #f7c6c5;
   }
-
   .bar {
     z-index: 4;
     position: absolute;
@@ -239,7 +236,6 @@
     border-right: 8px solid #2b1f1d;
     border-left: 8px solid #2b1f1d;
   }
-
   .bar:after {
     content: "";
     position: absolute;
@@ -250,7 +246,6 @@
     background: #e87c7c;
     border-radius: 3px;
   }
-
   .awning {
     position: absolute;
     left: 0;
@@ -258,15 +253,253 @@
     width: 100%;
     height: 50px;
   }
-
   .awning:before,
-.awning:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 38px solid #f9e9e4;
-}
+  .awning:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 38px solid #f9e9e4;
+  }
+  .awning:before {
+    left: -32px;
+    z-index: 1;
+  }
+  .awning:after {
+    right: -32px;
+  }
+  .awning__inner {
+    position: absolute;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 50px;
+    background: repeating-linear-gradient(
+      to right,
+      #e87c7c,
+      #e87c7c 20px,
+      #d96464 20px,
+      #d96464 40px
+    );
+  }
+  .awning__inner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    background: #fefefe;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    opacity: 0.2;
+  }
+  .awning__inner:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #e87c7c;
+    box-shadow: 0 0, 20px 0 #d96464, 40px 0 #e87c7c, 60px 0 #d96464,
+      80px 0 #e87c7c, 100px 0 #d96464, 120px 0 #e87c7c, 140px 0 #d96464,
+      160px 0 #e87c7c, 180px 0 #d96464, 200px 0 #e87c7c, 220px 0 #d96464,
+      240px 0 #e87c7c, 260px 0 #d96464, 280px 0 #e87c7c;
+  }
+  .awning__shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+  }
+  .awning__shadow:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    background-color: #222;
+    box-shadow: 0 0, 20px 0 #222, 40px 0 #222, 60px 0 #222, 80px 0 #222,
+      100px 0 #222, 120px 0 #222, 140px 0 #222, 160px 0 #222, 180px 0 #222,
+      200px 0 #222, 220px 0 #222, 240px 0 #222, 260px 0 #222, 280px 0 #222;
+  }
+  .wheel {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #555;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.3) inset;
+    position: absolute;
+    bottom: -40px;
+    overflow: hidden;
+  }
+  .wheel__inner {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ccc;
+  }
+  .wheel__inner:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    border: 5px solid #9396a4;
+    border-radius: 50%;
+  }
+  .wheel.left {
+    left: 100px;
+  }
+  .wheel.right {
+    left: 450px;
+  }
+  .donuts {
+    position: absolute;
+    top: -128px;
+    left: 170px;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: baseline;
+  }
+  .donuts .donut {
+    position: relative;
+    border-radius: 50%;
+    box-sizing: content-box;
+    flex-shrink: 0;
+    box-shadow: 3px 3px 0px 1px #d19485, inset 3px 3px 0px 0px #d19485;
+  }
+  .donuts .donut:before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    background: radial-gradient(
+        circle at 10% 10%,
+        #000 0,
+        #000 3px,
+        transparent 3px
+      ),
+      radial-gradient(circle at 10% 60%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 26% 76%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 28% 90%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 24% 4%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 20% 30%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 50% 8%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 50% 97%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 75% 85%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 87% 6%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 85% 26%, #000 0, #000 3px, transparent 3px),
+      radial-gradient(circle at 86% 50px, #000 0, #000 3px, transparent 3px);
+  }
+  .donuts .donut:after {
+    content: "";
+    position: absolute;
+    background: #8a6e6b;
+    left: calc(50% - 2px);
+    width: 8px;
+    height: 16px;
+    z-index: 0;
+  }
+  .donuts .donut .top {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  .donuts .donut .top:before,
+  .donuts .donut .top:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 12%;
+  }
+  .donuts .donut .top:before {
+    transform: rotate(63deg);
+  }
+  .donuts .donut .top:after {
+    transform: rotate(-59deg);
+  }
+  .donuts .donut.small {
+    width: 30px;
+    height: 30px;
+    border: 28px solid #f2e1d3;
+    z-index: 1;
+    margin-left: -14px;
+  }
+  .donuts .donut.small:before {
+    opacity: 0.3;
+    top: -13px;
+    bottom: -13px;
+    right: -23px;
+    left: -23px;
+  }
+  .donuts .donut.small:after {
+    bottom: -48px;
+  }
+  .donuts .donut.small .top {
+    top: -16px;
+    right: -16px;
+    bottom: -16px;
+    left: -16px;
+    border: 10px solid #6b524f;
+    border-radius: 12%;
+  }
+  .donuts .donut.small .top:before,
+  .donuts .donut.small .top:after {
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border: 10px solid #6b524f;
+  }
+  .donuts .donut.big {
+    width: 40px;
+    height: 40px;
+    border: 40px solid #f2e1d3;
+  }
+  .donuts .donut.big:before {
+    opacity: 0.2;
+    top: -24px;
+    bottom: -24px;
+    right: -24px;
+    left: -24px;
+  }
+  .donuts .donut.big:after {
+    bottom: -58px;
+  }
+  .donuts .donut.big .top {
+    top: -24px;
+    right: -24px;
+    bottom: -24px;
+    left: -24px;
+    border: 24px solid #8ee0c5;
+    border-radius: 12%;
+  }
+  .donuts .donut.big .top:before,
+  .donuts .donut.big .top:after {
+    top: -24px;
+    right: -24px;
+    bottom: -24px;
+    left: -24px;
+    border: 22px solid #8ee0c5;
+  }
+  .shadow {
+    width: 620px;
+    height: 20px;
+    position: absolute;
+    bottom: -44px;
+    background: #eee;
+    border-radius: 50px;
+    z-index: -1;
+  }
