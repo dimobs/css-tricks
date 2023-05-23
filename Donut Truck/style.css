@@ -366,6 +366,7 @@
     left: 450px;
   }
   .donuts {
+    background-color: red;
     position: absolute;
     top: -128px;
     left: 170px;
@@ -385,12 +386,7 @@
     z-index: 1;
     content: "";
     position: absolute;
-    background: radial-gradient(
-        circle at 10% 10%,
-        #000 0,
-        #000 3px,
-        transparent 3px
-      ),
+    background: radial-gradient(circle at 10% 10%,#000 0,#000 3px,transparent 3px),
       radial-gradient(circle at 10% 60%, #000 0, #000 3px, transparent 3px),
       radial-gradient(circle at 26% 76%, #000 0, #000 3px, transparent 3px),
       radial-gradient(circle at 28% 90%, #000 0, #000 3px, transparent 3px),
