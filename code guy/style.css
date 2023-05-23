@@ -449,3 +449,21 @@ body {
     z-index: 12;
   }
   
+  .ear-left {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    border-radius: 50px 0 0 50px;
+    width: 16px;
+    height: 24px;
+    background-color: #f6d2be;
+  }
+  .ear-right {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    border-radius: 0 50px 50px 0;
+    width: 16px;
+    height: 24px;
+    background-color: #f6d2be;
+  }
