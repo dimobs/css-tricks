@@ -188,3 +188,15 @@
     font-size: 8px;
     padding: 4px 0;
   }
+  .menu__list {
+    position: absolute;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: 0;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background: #fefefe;
+    color: #fff;
+  }
