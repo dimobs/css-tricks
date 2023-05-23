@@ -1,0 +1,190 @@
+* {
+    font-family: sans-serif;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 600px;
+    height: 95%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .truck {
+    content: "";
+    width: 600px;
+    height: 280px;
+    position: absolute;
+    bottom: 50px;
+  }
+  .truck:before,
+  .truck:after {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+  }
+  .truck:before {
+    top: 22px;
+    left: 20px;
+    width: 528px;
+    height: 8px;
+    background: #f1aca8;
+    border-radius: 10px;
+    z-index: 3;
+  }
+  .truck:after {
+    top: 128px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: 16px;
+    background: #f9e9e4;
+    z-index: 2;
+  }
+  .body {
+    position: relative;
+    width: 600px;
+    height: 350px;
+  }
+  .body .top {
+    position: relative;
+    z-index: 2;
+    width: 600px;
+    height: 140px;
+    border-radius: 120px 180px 4px 4px;
+    overflow: hidden;
+  }
+  .body .top > .back,
+  .body .top > .front {
+    position: absolute;
+    top: 0;
+    background-color: #f9e9e4;
+  }
+  .body .top > .back {
+    left: 0;
+    width: 420px;
+    height: calc(100% - 12px);
+  }
+  .body .top > .front {
+    right: 0;
+    width: 180px;
+    height: calc(100% - 12px);
+  }
+  .body .bottom {
+    position: relative;
+    z-index: 0;
+    width: 632px;
+    height: 140px;
+    margin-left: -6px;
+    overflow: hidden;
+  }
+  .body .bottom .board {
+    position: absolute;
+    top: -100px;
+    left: 6px;
+    width: 618px;
+    height: 400px;
+    background-color: #9396a4;
+    border-radius: 0 40% 44% 190px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .body .bottom .board .back,
+  .body .bottom .board .front {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #f1aca8;
+  }
+  .body .bottom .board .back {
+    left: 0;
+    width: 440px;
+  }
+  .body .bottom .board .front {
+    right: 0;
+    width: 198px;
+  }
+
+  .body .bottom .board .front:before {
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    width: 28px;
+    height: 8px;
+    background: #fefefe;
+    border-radius: 5px;
+  }
+
+  .body .bottom:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #f7c6c5;
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .body .light {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 24px;
+    height: 40px;
+    background-color: #f7c6c5;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .window {
+    width: 70px;
+    height: 65px;
+    border: 4px solid #fefefe;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .window:before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    height: 150%;
+    width: 30px;
+    color: #e8fbff;
+    background-color: #e8fbff;
+    transform: rotate(45deg);
+    box-shadow: -30px 0 0 -10px;
+  }
+
+  .window.back {
+    left: 20px;
+  }
+
+  .window.front {
+    left: 110px;
+  }
+  .menu {
+    box-sizing: border-box;
+    z-index: 4;
+    position: absolute;
+    top: 90px;
+    left: 24px;
+    width: 72px;
+    height: 100px;
+    background: #efd3d3;
+    border-radius: 2px;
+    color: #f1aca8;
+    text-align: center;
+    font-size: 8px;
+    padding: 4px 0;
+  }
