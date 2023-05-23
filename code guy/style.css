@@ -29,3 +29,12 @@ body {
     background-color: #f5f2f1;
     position: relative;
   }
+
+  .stage:after {
+    background-color: #eae4df;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    content: "";
+    bottom: 0;
+  }
