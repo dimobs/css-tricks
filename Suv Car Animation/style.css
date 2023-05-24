@@ -144,3 +144,11 @@ overflow: hidden;
     animation: road 1s infinite;
   }
   
+  .jeep {
+    z-index: 4;
+    position: absolute;
+    bottom: 90px;
+    left: 100px;
+    opacity: 0.95;
+    animation: jeep 50s linear infinite forwards;
+  }
