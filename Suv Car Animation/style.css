@@ -173,9 +173,16 @@ overflow: hidden;
     animation: wheels 5s linear infinite;
   }
 
+  @keyframes road {
+    from {
+      background-position: 110% center;
+    }
+    to {
+      background-position: -125% center;
+    }
+  }
 
 
-  
   @keyframes wheels {
     from {
       transform: rotate(0deg);
