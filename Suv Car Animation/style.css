@@ -16,3 +16,18 @@ overflow: hidden;
     animation: timeChange 2s linear 1 forwards
   }
 
+  .cloudContainer {
+    top: 5%;
+    width: 100%;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+
+  .clouds {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/clouds.png);
+    background-size: 250%;
+    width: 10%;
+    height: 40%;
+  }
+  
