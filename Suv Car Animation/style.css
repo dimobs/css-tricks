@@ -16,6 +16,23 @@ overflow: hidden;
     animation: timeChange 2s linear 1 forwards
   }
 
+  @keyframes timeChange {
+    70% {
+      background-color: #86bbd8;
+    }
+    100% {
+      background-color: #2f3061;
+    }
+  }
+  @keyframes stars {
+    70% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   .cloudContainer {
     top: 5%;
     width: 100%;
@@ -31,3 +48,44 @@ overflow: hidden;
     height: 40%;
   }
   
+  .cloud1 {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    animation: moveclouds 2500s linear infinite;
+  }
+
+  .cloud3 {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    animation: moveclouds 2000s linear infinite;
+  }
+
+  .cloud4 {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    animation: moveclouds 2300s linear infinite;
+  }
+
+  .cloud5 {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    animation: moveclouds 2800s linear infinite;
+  }
+
+  .cloud6 {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    animation: moveclouds 2500s linear infinite;
+  }
+
+  .cloud7 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    animation: moveclouds 2500s linear infinite;
+  }
