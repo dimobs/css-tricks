@@ -115,3 +115,17 @@ overflow: hidden;
     top: 5%;
     right: 5%;
   }
+
+  .clouds {
+    z-index: 2;
+  }
+
+  .hills {
+    z-index: 2;
+    position: absolute;
+    bottom: 80px;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/549579/hlls.svg);
+    min-height: 250px;
+    width: 140%;
+    animation: hills 130s infinite;
+  }
