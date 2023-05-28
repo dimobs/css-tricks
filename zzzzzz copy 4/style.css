@@ -119,3 +119,15 @@ body {
 .container .box:hover .content .text p {
     color: #2e2e2e;
 }
+
+.container .box .content .text a {
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 8px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
