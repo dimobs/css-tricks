@@ -131,3 +131,7 @@ body {
     margin-top: 10px;
     transition: 0.5s ease-in-out;
 }
+.container .box:hover .content .text a {
+    background: #2e2e2e;
+    color: var(--clr);
+}
