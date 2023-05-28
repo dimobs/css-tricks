@@ -14,3 +14,9 @@ body {
     min-height: 100vh;
     background-color: #222;
 }
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
