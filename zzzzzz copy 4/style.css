@@ -12,11 +12,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #222;
+    background-color: #9f9e9e;
 }
 
 .container {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
