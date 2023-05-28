@@ -99,3 +99,10 @@ body {
     color: #2e2e2e;
     box-shadow: 0 0 0 4px #2e2e2e,0 0 0 300px var(--clr);
 }
+
+.container .box .content .text h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
