@@ -93,3 +93,9 @@ body {
     background: #2e2e2e;
     transition: 0.5s ease-in-out;
 }
+
+.container .box:hover .content .icon {
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e,0 0 0 300px var(--clr);
+}
