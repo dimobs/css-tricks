@@ -101,3 +101,17 @@
     color: #000;
     background: #fff;
   }
+
+  button:focus {
+    outline-width: 0;
+  }
+
+  .header {
+    position: absolute;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 48px;
+    margin-left: 128px;
+    margin-top: 81px;
+  }
