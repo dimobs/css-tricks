@@ -37,3 +37,11 @@ span {
     animation: animate 1s linear infinite;
     pointer-events: none;
   }
+
+  
+@keyframes animate {
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
