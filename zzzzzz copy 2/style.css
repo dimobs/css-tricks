@@ -119,3 +119,8 @@
       transform: rotate(-30deg) translateX(13.5px) translateY(8px);
     }
   }
+
+  html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
