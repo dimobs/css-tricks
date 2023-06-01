@@ -1,0 +1,13 @@
+.heart-switch {
+    --duration: .45s;
+    --stroke: #D1D6EE;
+    --stroke-active: #ec4472;
+    --fill: #fff;
+    --fill-active: #ec638e;
+    --shadow: rgba(0, 9, 61, 0.25);
+    cursor: pointer;
+    position: relative;
+    transform: scale(var(--s, 1)) translateZ(0);
+    transition: transform 0.2s;
+    -webkit-tap-highlight-color: transparent;
+  }
