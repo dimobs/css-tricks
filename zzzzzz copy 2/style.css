@@ -104,3 +104,18 @@
       transform: rotate(-30deg) translateX(13.5px) translateY(8px);
     }
   }
+
+  @keyframes check {
+    0% {
+      transform: rotate(30deg);
+    }
+    25% {
+      transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+    }
+    50% {
+      transform: rotate(30deg) translateX(9px);
+    }
+    100% {
+      transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+    }
+  }
