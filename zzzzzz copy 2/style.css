@@ -11,3 +11,7 @@
     transition: transform 0.2s;
     -webkit-tap-highlight-color: transparent;
   }
+
+  .heart-switch:active {
+    --s: .95;
+  }
