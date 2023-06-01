@@ -45,3 +45,16 @@
     display: block;
     transition: stroke var(--duration), fill var(--duration);
   }
+
+  .heart-switch input:not(:checked) {
+    -webkit-animation: uncheck var(--duration) linear forwards;
+            animation: uncheck var(--duration) linear forwards;
+  }
+  .heart-switch input:checked {
+    -webkit-animation: check var(--duration) linear forwards;
+            animation: check var(--duration) linear forwards;
+  }
+  .heart-switch input:checked + svg {
+    --fill: var(--fill-active);
+    --stroke: var(--stroke-active);
+  }
