@@ -1,0 +1,36 @@
+@property --_l {
+    syntax: "<length>";
+    initial-value: 0px;
+    inherits: true;
+  }
+
+  @property --_r {
+    syntax: "<length>";
+    initial-value: 0px;
+    inherits: true;
+  }
+
+  img {
+    --d: 18px;
+    --a:20deg;
+    --x:10px;
+    width: 250px;
+    aspect-ratio: 1.1;
+    padding-block: var(--d);
+    transform: perspective(400px) rotateY(calc(var(--_i,1)*var(--a)));
+    outline: var(--d) solid #0008;
+    --_d: calc(100% - var(--d));
+    --_l: 0px;
+    --_r: 0px;
+    clip-path: polygon(
+      var(--_l) calc(var(--_d) - var(--x)),
+      var(--_l) calc(var(--d)  + var(--x)), 
+      var(--d) var(--d),var(--_d) var(--d),
+      calc(var(--_d) + var(--_r)) calc(var(--d)  + var(--x)),
+      calc(var(--_d) + var(--_r)) calc(var(--_d) - var(--x)),  
+      var(--_d) var(--_d),var(--d) var(--_d)
+     );
+    transition: transform .3s,--_r .15s,--_l .15s .15s;
+    transition-timing-function: linear;
+    cursor: pointer;
+  }
