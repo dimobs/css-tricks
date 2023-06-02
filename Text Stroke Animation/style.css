@@ -85,3 +85,22 @@ min-inline-size: 22.5rem;
         inset 0 4px 10px 0px #0007, inset 0 -4px 16px 0px #fff7;
     opacity: 0;
 }
+
+
+.reset:focus-visible {
+    outline: 2px solid #0ebeff;
+    outline-offset: 1px;
+}
+
+.reset:active {
+    scale: 0.98;
+}
+
+.reset:is(:active, :focus-visible)::after {
+    opacity: 0;
+}
+
+.reset:active::before {
+    opacity: 1;
+}
+
