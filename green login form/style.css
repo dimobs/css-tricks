@@ -47,3 +47,11 @@ background: linear-gradient(#000,#0f0,#000);
 		transform: translateY(100%);
 	}
 }
+
+section span {
+    position: relative;
+    display: block;
+    width: cal(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background-color: #18181818;
+}
