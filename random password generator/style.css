@@ -42,3 +42,14 @@ button {
     height: 65px;
     overflow: hidden;
 }
+
+.result__info {
+ position: absolute;
+ bottom: 4px;   
+ color: #fff;
+ font-size: 0.8rem;
+ transition: all 150ms ease-in-out;
+ transform: translate(200%);
+ opacity: 0;
+}
+
