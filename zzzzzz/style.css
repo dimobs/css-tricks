@@ -49,3 +49,11 @@ animation: dodge-area 6s linear infinite;
         transform: translate(50%, 50%);
     }
 }
+
+.neon-wrapper{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  
