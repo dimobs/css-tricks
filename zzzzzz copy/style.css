@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: inline-block;
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  background: tomato;
+}
+.inner {
+  position: relative;
+  margin: 0 auto;
+  height: 50%;
+  width: 50%;
+  background: #FFC4BA;
+}
+.inner.small {
+  width: 25%;
+  height: 25%;
+}
+.inner.big {
+  width: 75%;
+  height: 75%;
+}
+.percent {
+  top: 25%
+}
+.transform {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes centerMe {
+  0% { top: 0%; transform: translateY(0%); }
+  50% { top: 50%; transform: translateY(0%); }
+  100% { top: 50%; transform: translateY(-50%); }
+}
+
+.outer {
+  position: relative;
+  border: solid 1px;
+  height: 200px;
+  width: 200px;
+}
+
+.inner {
+  position: relative;
+  background-color: red;
+  height: 50px; width: 50px;
+  margin: auto;
+  animation: centerMe 5s;
+  animation-fill-mode: forwards;
+}
+
+/* rules for example */
+.hline,.vline{background:#000;position:absolute}.vline{height:100%;width:1px;left:calc(50% - .5px);top:0}.hline{width:100%;height:1px;top:calc(50% - .5px)}

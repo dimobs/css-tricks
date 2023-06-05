@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <b>First row </b>looks alright, but that's because the gap works well with the 25%
+    <div class="row">
+      <div class="container">
+        <div class="inner percent"></div>
+      </div>
+      <div class="container">
+        <div class="inner transform"></div>
+      </div>
+    </div>
+    <b>Second row </b>made the center square a bit smaller, and the 25% now is too high as we'd expect the bottom of the element to reach 75%
+    <div class="row">
+      <div class="container">
+        <div class="small inner percent"></div>
+      </div>
+      <div class="container">
+        <div class="small inner transform"></div>
+      </div>
+    </div>
+    <b>Third row </b>now I've made the center box big and it ends lower than 75% making 25% start too late
+    <div class="row">
+      <div class="container">
+        <div class="big inner percent"></div>
+      </div>
+      <div class="container">
+        <div class="big inner transform"></div>
+      </div>
+    </div>
+</body>
+</html>
