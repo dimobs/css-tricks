@@ -12,4 +12,6 @@ body {
 .text {
     color: wheat;
     font-weight: bold;
+    font-family: 'Arial';
+    text-transform: uppercase;
 }
