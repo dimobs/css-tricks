@@ -15,3 +15,11 @@ body {
     font-family: 'Arial';
     text-transform: uppercase;
 }
+
+.text::before {
+    content: attr(data-text);
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(2px);
+}
+
