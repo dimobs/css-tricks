@@ -78,3 +78,8 @@ a i::after {
     transform: translateX(-50%);
     transition: 0.5s;
   }
+
+  a:hover i::after {
+    left: 80%;
+    width: 20px;
+  }
