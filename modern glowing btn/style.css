@@ -60,4 +60,7 @@ a i::before {
     width: 10px;
     height: 5px;
     border: 2px solid var(--color);
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
 }
