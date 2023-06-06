@@ -16,3 +16,14 @@
     gap: 2rem;
     background: #9c9ea9;
 }
+
+a {
+    position: relative;
+    background: #27282c;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5ren;
+    padding: 0.75rem 1.5rem;
+transition: 0.5s;
+}
+
