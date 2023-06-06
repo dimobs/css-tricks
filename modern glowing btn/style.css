@@ -44,5 +44,15 @@ a:before {
 a span {
     position: relative;
     z-index: 1;
+}
 
+a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i::before {
+    content: "";
+    
 }
