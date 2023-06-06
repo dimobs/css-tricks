@@ -50,6 +50,7 @@ a i {
     position: absolute;
     inset: 0;
     display: block;
+    /* border: 1px solid green; */
 }
 
 a i::before {
@@ -64,3 +65,16 @@ a i::before {
     transform: translateX(-50%);
     transition: 0.5s;
 }
+
+a i::after {
+    content: '';
+    position: absolute;
+    bottom: -3.5px;
+    left: 20%;
+    width: 10px;
+    height: 5px;
+    border: 2px solid var(--color);
+    background: #27282c;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
