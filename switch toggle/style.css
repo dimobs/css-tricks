@@ -79,3 +79,6 @@ position: relative;
     background: #2eea0e;
     box-shadow: 1px -1px 2px 1px rgba(255, 255, 255, 0.5), -1px 1px 2px 1px rgba(255, 255, 255, 0.2);
   }
+  #toggleWrapper #toggleOn:checked:after {
+    box-shadow: unset;
+  }
