@@ -8,3 +8,19 @@ padding: 0;
 margin: 0;
 position: relative;
 }
+
+#toggleWrapper {
+    width: 100px;
+    height: 140px;
+    background: linear-gradient(180deg, #efefef 0%, #cccccc 100%);
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: solid 1px #fff;
+    border-right-color: #c9c9c9;
+    border-bottom-color: #949494;
+    border-left-color: #bcbcbc;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 12px 14px;
+}
+
