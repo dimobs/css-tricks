@@ -100,3 +100,6 @@ position: relative;
     margin: -13px 0 0 -13px;
     position: absolute;
   }
+  #toggleWrapper #toggleOff:checked {
+    background: radial-gradient(circle, #f8dfde 0%, #f6cbca 20%, #e0cecd 30%, #dedede 60%);
+  }
