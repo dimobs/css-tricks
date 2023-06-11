@@ -108,4 +108,18 @@ position: relative;
     border-color: #ca5471;
     box-shadow: 1px -1px 2px 1px rgba(255, 255, 255, 0.5), -1px 1px 2px 1px rgba(255, 255, 255, 0.5);
   }
-  
+  #light {
+    pointer-events: none;
+    background-image: linear-gradient(180deg, rgba(174, 255, 0, 0.1) 0%, rgba(174, 255, 0, 0) 100%);
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 2.5s ease-out;
+  }
+  #toggleOn:checked + #light {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
