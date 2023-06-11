@@ -74,3 +74,8 @@ position: relative;
     border-bottom: solid 1px #666;
     background: radial-gradient(circle, #e4fdef 0%, #e3f7eb 20%, #e0ede6 30%, #dadada 60%);
   }
+
+  #toggleWrapper #toggleOn:checked:before {
+    background: #2eea0e;
+    box-shadow: 1px -1px 2px 1px rgba(255, 255, 255, 0.5), -1px 1px 2px 1px rgba(255, 255, 255, 0.2);
+  }
