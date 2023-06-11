@@ -103,3 +103,9 @@ position: relative;
   #toggleWrapper #toggleOff:checked {
     background: radial-gradient(circle, #f8dfde 0%, #f6cbca 20%, #e0cecd 30%, #dedede 60%);
   }
+  #toggleWrapper #toggleOff:checked:before {
+    background: #f5c9c9;
+    border-color: #ca5471;
+    box-shadow: 1px -1px 2px 1px rgba(255, 255, 255, 0.5), -1px 1px 2px 1px rgba(255, 255, 255, 0.5);
+  }
+  
