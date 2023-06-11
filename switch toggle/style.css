@@ -24,7 +24,7 @@ position: relative;
     padding: 12px 14px;
 }
 #toggleWrapper input {
-    /* appearance: none; */
+    appearance: none;
 }
 #toggleWrapper > div {
     display: flex;
@@ -55,7 +55,7 @@ position: relative;
   width: 2px;
   height: 26px;
   background: #666;
-  background: green;
+  /* background: green; */
   left: 50%;
   top: 50%;
   margin: -13px 0 0 -1px;
@@ -69,3 +69,5 @@ position: relative;
     position: absolute;
     box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.8);
   }
+
+  
