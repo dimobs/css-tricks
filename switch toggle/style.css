@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(180deg, #efefef 0%, #cdcdcf 100%) no-repeat;
+height: 100vh;
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+padding: 0;
+margin: 0;
+position: relative;
+}
