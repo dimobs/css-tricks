@@ -50,3 +50,13 @@ position: relative;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px 2px 2px rgba(0, 0, 0, 0.2);
     margin-top: -2px;
   }
+  #toggleWrapper #toggleOn:before {
+    content: "";
+    width: 2px;
+    height: 26px;
+    background: #666;
+    left: 50%;
+    top: 50%;
+    margin: -13px 0 0 -1px;
+    position: absolute;
+  }
