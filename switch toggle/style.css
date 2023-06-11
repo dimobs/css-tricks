@@ -89,3 +89,14 @@ position: relative;
     box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.2), 2px -2px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: -2px;
   }
+  #toggleWrapper #toggleOff:before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: solid 2px #666;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    margin: -13px 0 0 -13px;
+    position: absolute;
+  }
