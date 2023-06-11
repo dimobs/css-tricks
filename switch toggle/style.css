@@ -23,4 +23,7 @@ position: relative;
     margin: auto;
     padding: 12px 14px;
 }
+#toggleWrapper input {
+    appearance: none;
+}
 
