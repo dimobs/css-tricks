@@ -43,3 +43,10 @@ position: relative;
   margin: 0;
   position: relative;
 }
+#toggleWrapper #toggleOn {
+    border-bottom: solid 4px #898989;
+    background: linear-gradient(180deg, #dedede 0%, #eaeaea 100%);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: -2px;
+  }
