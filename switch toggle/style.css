@@ -50,13 +50,22 @@ position: relative;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px 2px 2px rgba(0, 0, 0, 0.2);
     margin-top: -2px;
   }
-  #toggleWrapper #toggleOn:before {
+#toggleWrapper #toggleOn:before {
+  content: "";
+  width: 2px;
+  height: 26px;
+  background: #666;
+  background: green;
+  left: 50%;
+  top: 50%;
+  margin: -13px 0 0 -1px;
+  position: absolute;
+}
+#toggleWrapper #toggleOn:after {
     content: "";
-    width: 2px;
-    height: 26px;
-    background: #666;
-    left: 50%;
-    top: 50%;
-    margin: -13px 0 0 -1px;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
     position: absolute;
+    box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.8);
   }
