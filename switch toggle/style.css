@@ -70,4 +70,7 @@ position: relative;
     box-shadow: 0 10px 15px 1px rgba(0, 0, 0, 0.8);
   }
 
-  
+  #toggleWrapper #toggleOn:checked {
+    border-bottom: solid 1px #666;
+    background: radial-gradient(circle, #e4fdef 0%, #e3f7eb 20%, #e0ede6 30%, #dadada 60%);
+  }
