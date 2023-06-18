@@ -5,3 +5,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
+body {
+  height: 100%;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #262433;
+    color: #fff;
+    display: grid;
+    place-items: center;
+  }
+
+  p{
+    padding-bottom: 16px;
+  }
+
+  .input {
+    position: relative;
+  }
+.input__field {
+    background-color: transparent;
+
+
+}
