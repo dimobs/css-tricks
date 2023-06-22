@@ -2,30 +2,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  body {
     background-color: #4249ed;
-}
-#toggle-btn,
-.menu a {
+  }
+  #toggle-btn,
+  .menu a {
     position: absolute;
     display: grid;
     place-items: center;
     border-radius: 50%;
-}
-.menu a {
+  }
+  .menu a {
     background-color: #ffffff;
     height: 70px;
     width: 70px;
     font-size: 22px;
-    color: #4349ed;
+    color: #4249ed;
     text-decoration: none;
     top: 30px;
     left: 30px;
-    transition: .5s;
-}
-#toggle-btn {
+    transition: 0.5s;
+  }
+  #toggle-btn {
     background-color: #0f1730;
     color: #ffffff;
     height: 100px;

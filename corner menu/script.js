@@ -1,7 +1,6 @@
 let toggleBtn = document.getElementById("toggle-btn");
 let menuItems = document.querySelectorAll(".menu a");
 let menuActive = false;
-
 toggleBtn.addEventListener("click", () => {
   if (!menuActive) {
     menuItems[0].style.transform = "translate(150px,0)";
@@ -11,8 +10,8 @@ toggleBtn.addEventListener("click", () => {
     menuActive = true;
     toggleBtn.classList.add("active");
   } else {
-    menuItems.forEach((menuItem) => {
-      menuItem.style.transform = "translate(0,0)";
+    menuItems.forEach((x) => {
+      x.style.transform = "translate(0,0)";
     });
     menuActive = false;
     toggleBtn.classList.remove("active");
