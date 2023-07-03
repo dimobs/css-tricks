@@ -83,3 +83,12 @@ opacity: 0.3;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
   }
+
+  .container .contact-card .text {
+    position: absolute;
+    top: 42.5px;
+    right: 40px;
+    width: 100px;
+    height: 7.5px;
+    background-color: #996aa9;
+  }
