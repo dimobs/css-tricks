@@ -245,3 +245,79 @@ opacity: 0;
     width: 20px;
     background-color: #5fa8b4;
   }
+
+  .container #magnifying-glass #handle #handle-inner {
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 92px;
+    left: -7.5px;
+    top: -7.5px;
+    width: 27.5px;
+    border-top-left-radius: 7.5px;
+    border-bottom-right-radius: 17.5px;
+    background-color: #a7d9e1;
+    z-index: 2;
+  }
+
+  .container #magnifying-glass #handle #handle-inner::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 34px;
+    height: 8px;
+    width: 27.5px;
+    background-color: #6fc5d3;
+    z-index: 1;
+  }
+
+  .container #magnifying-glass #handle #handle-inner::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    height: 8px;
+    width: 27.5px;
+    background-color: #6fc5d3;
+    z-index: 1;
+  }
+  @keyframes magnifying-glass-animate {
+    0% {
+      transform: rotate(37.5deg);
+      left: 150px;
+      top: 3px;
+    }
+    10% {
+      transform: rotate(37.5deg);
+      left: 150px;
+      top: 5;
+    }
+    50% {
+      transform: rotate(5deg);
+      left: -150px;
+      top: 8;
+    }
+    75% {
+      transform: rotate(5deg);
+      left: -150px;
+      top: 10;
+    }
+    82.5% {
+      top: 27.5px;
+    }
+    90% {
+      transform: rotate(37.5deg);
+      left: 150px;
+      top: 10px;
+    }
+    100% {
+      transform: rotate(37.5deg);
+      left: 150px;
+      top: 5px;
+    }
+  }
