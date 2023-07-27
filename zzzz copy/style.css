@@ -1,0 +1,26 @@
+body {
+    background-color: aqua;
+    counter-reset: div_counter;
+    display: flex;
+    gap:20px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+}
+
+div::before {
+    counter-increment: div_counter;
+    content: counter(div_counter);
+    color: black;
+    font-size: 28px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left:0;
+    padding: auto;
+    position: absolute;
+}
