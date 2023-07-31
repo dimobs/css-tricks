@@ -1,7 +1,7 @@
 body {
     background-color: rgb(51, 53, 53);
     counter-reset: div_counter;
-    display: flex;
+    /* display: flex; */
     gap:20px;
 }
 
@@ -29,4 +29,19 @@ h1 {
     background-image: linear-gradient(to right, #ffff, #009b74, #d01c1f);
     background-clip: text;
     color: transparent;
+    display: block;
+}
+
+h2{
+    display: block;
+    font-size: 48px;
+    display: block;
+}
+
+h2::selection{
+    color: coral;
+  }
+
+h3 {
+    font-size: clamp(5rem, 8vw, 8rem);
 }
