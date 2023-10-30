@@ -31,9 +31,32 @@ body {
 	border-radius: 25px;
 	-webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
 	        box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
-	background-color: #222831;
+	background-color: #6f7b8d;
 	color: #ffffff;
 	height: 400px;
+	position: relative;
+}
+
+.spin {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 3px;
+   background: linear-gradient(to left, transparent, #318fdd, #00fffc);
+	animation: anime 2s alternate-reverse infinite;
+	transform: translateX(-100%);
+	animation-delay: 0.8s;
+	overflow: hidden;
+}
+
+@keyframes anime {
+	0% {
+		transform: translateX(1%);
+	}
+	100% {
+		transform: translateX(-200%);
+	}
 }
 .today-info {
 	padding: 15px;
