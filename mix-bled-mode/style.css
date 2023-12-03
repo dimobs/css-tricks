@@ -25,3 +25,15 @@ span:nth-child(3) {
 margin-right: auto;
 margin-left: auto;
 }
+
+
+div.mix-blend {
+        background-image: url('https://cdn.pixabay.com/photo/2023/10/12/12/55/woman-8310751_1280.jpg');
+        height: 400px;
+        width: 850px;
+}
+        h1 {
+            background-color: white;
+            padding: 0.5rem 1rem;
+            mix-blend-mode: overlay;
+}
