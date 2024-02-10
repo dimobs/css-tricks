@@ -93,7 +93,7 @@ z-index: 100;
     opacity: 1;
   }
   .sidebar.close .text {
-    /* opacity: 0; */
+    opacity: 0;
   }
 
   .sidebar header {
@@ -148,3 +148,8 @@ header .image-text .profession {
     cursor: pointer;
     transition: var(--tran-05);
   }
+
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+  }
+  
