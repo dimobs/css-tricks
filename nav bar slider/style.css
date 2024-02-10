@@ -155,6 +155,9 @@
     font-size: 22px;
     cursor: pointer;
     transition: var(--tran-05);
+    box-shadow: -5px -5px 15px 2px rgb(91, 105, 109);
+transition: 1s;
+    
   }
   
   body.dark .sidebar header .toggle {
@@ -163,6 +166,9 @@
   
   .sidebar.close .toggle {
     transform: translateY(-50%) rotate(0deg);
+    box-shadow: 5px 5px 15px 10px rgb(200, 208, 210);
+    transition: 1s;
+
   }
   
   .sidebar .menu {
