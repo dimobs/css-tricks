@@ -55,6 +55,7 @@
   }
   .sidebar.close {
     width: 88px;
+    transition: 1s ease-in-out;
   }
   
   /* ===== Reusable code - Here ===== */
@@ -93,10 +94,12 @@
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
+    transition: 1s;
+
   }
   .sidebar.close .text {
     opacity: 0;
-    transition: 3s ease-in-out;
+    transition: 0.28s;
   }
   /* =========================== */
   
@@ -107,6 +110,7 @@
   .sidebar header .image-text {
     display: flex;
     align-items: center;
+
   }
   .sidebar header .logo-text {
     display: flex;
@@ -302,6 +306,7 @@
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
+    transition: 1.7s;
   }
   body.dark .home .text {
     color: var(--text-color);
