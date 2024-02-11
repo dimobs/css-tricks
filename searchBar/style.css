@@ -47,4 +47,9 @@ border: 1px solid #fff;
     cursor: pointer;
     transition: color 0.25s;
 }
-
+.search__button:hover {
+    color: #e3e3e3;
+}
+.search:focus-within input {
+    width: 200px;
+  }
