@@ -38,3 +38,13 @@ border: 1px solid #fff;
     width: 0;
     transition: width 0.5s;
 }
+
+.search__button {
+    display: grid;
+    place-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
