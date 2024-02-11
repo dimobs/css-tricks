@@ -29,5 +29,12 @@ border: 1px solid #fff;
 
 .search :is(input, button) {
     background: transparent;
+    color: inherit;
+    border: none;
+    outline: none;
 }
 
+.search__input {
+    width: 0;
+    transition: width 0.5s;
+}
