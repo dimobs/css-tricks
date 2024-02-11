@@ -52,4 +52,11 @@ border: 1px solid #fff;
 }
 .search:focus-within input {
     width: 200px;
+    letter-spacing: 0.8px;
   }
+  ::placeholder {
+    font: inherit;
+    color: #e3e3e3;
+   
+  }
+
