@@ -44,3 +44,21 @@ body {
     font-weight: 500;
 }
 
+.calculator .buttons span {
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 20px #fff;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #666;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+}
+
