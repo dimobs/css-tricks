@@ -74,3 +74,13 @@ p {
     z-index: 1;
     position: relative;
   }
+  .swiper-container {
+    background: linear-gradient(270deg, #f7f9ff 0%, #f2f6ff 100%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    position: relative;
+    max-width: 420px;
+    height: 100%;
+    max-height: 420px;
+    border-radius: 10px;
+  }
