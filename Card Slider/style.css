@@ -104,3 +104,10 @@ p {
     cursor: -webkit-grab;
     cursor: grab;
   }
+  .slider-item-content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4s;
+  }
