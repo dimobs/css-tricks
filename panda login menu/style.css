@@ -153,3 +153,25 @@ margin-top: 0.8em;
 .eyeball-r {
   transform: rotate(-20deg);
 }
+.nose {
+    height: 1em;
+    width: 1em;
+    background-color: #3f3554;
+    position: absolute;
+    top: 4.37em;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 1.2em 0 0 0.25em;
+    transform: rotate(45deg);
+  }
+  .nose:before {
+    content: "";
+    position: absolute;
+    background-color: #3f3554;
+    height: 0.6em;
+    width: 0.1em;
+    transform: rotate(-45deg);
+    top: 0.75em;
+    left: 1em;
+  }
