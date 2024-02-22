@@ -49,3 +49,7 @@ form input {
 form input:focus{
     border-color: #71c418;
 }
+
+form input::placeholder {
+    color: #b4b5b3;
+}
