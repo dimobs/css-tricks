@@ -84,3 +84,21 @@ margin-top: 0.8em;
     left: 0;
     right: 0;
 }
+.ear-l,
+.ear-r {
+  background-color: #3f3554;
+  height: 2.5em;
+  width: 2.81em;
+  border: 0.18em solid #2e0d30;
+  border-radius: 2.5em 2.5em 0 0;
+  top: 1.75em;
+  position: absolute;
+}
+.ear-l {
+    transform: rotate(-38deg);
+    left: 10.75em;
+  }
+  .ear-r {
+    transform: rotate(38deg);
+    right: 10.75em;
+  }
