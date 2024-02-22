@@ -75,4 +75,12 @@ margin-top: 0.8em;
 }
 .panda-face {
     height: 7.5em;
+    width: 8.4em;
+    background-color: #ffffff;
+    border: 0.18em solid #2e0d30;
+    position: absolute;
+    top: 2em;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
