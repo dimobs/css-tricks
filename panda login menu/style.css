@@ -102,3 +102,20 @@ margin-top: 0.8em;
     transform: rotate(38deg);
     right: 10.75em;
   }
+  .blush-l,
+.blush-r {
+  background-color: #ff8bb1;
+  height: 1em;
+  width: 1.37em;
+  border-radius: 50%;
+  position: absolute;
+  top: 4em;
+}
+.blush-l {
+  transform: rotate(25deg);
+  left: 1em;
+}
+.blush-r {
+  transform: rotate(-25deg);
+  right: 1em;
+}
