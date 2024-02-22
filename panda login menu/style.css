@@ -31,3 +31,11 @@ form {
     justify-content: center;
     border-radius: 0.5em;
 }
+form label {
+    display: block;
+    margin-bottom: 0.2em;
+    font-weight: 600;
+    color: #2e0d30;
+}
+form input {
+}
