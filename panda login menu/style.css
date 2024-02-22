@@ -8,3 +8,12 @@
 body {
     background: #8e70e6;
 }
+.container {
+    height: 31.25em;
+    width: 31.25em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: red;
+}
