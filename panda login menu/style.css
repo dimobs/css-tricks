@@ -175,3 +175,21 @@ margin-top: 0.8em;
     top: 0.75em;
     left: 1em;
   }
+  .mouth,
+.mouth:before {
+  height: 0.75em;
+  width: 0.93em;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0.18em #3f3554;
+}
+.mouth {
+  top: 5.31em;
+  left: 3.12em;
+}
+.mouth:before {
+  content: "";
+  position: absolute;
+  left: 0.87em;
+}
