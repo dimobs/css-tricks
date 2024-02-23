@@ -4,3 +4,18 @@
     box-sizing: border-box;
     font-family: consolas;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+.scan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
