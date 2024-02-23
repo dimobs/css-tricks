@@ -89,3 +89,28 @@ body {
       opacity: 1;
     }
   }
+  .scan .hand .lines {
+    position: absolute;
+    inset: 0;
+  }
+  .scan .hand .lines::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    background: url(lines.png);
+    background-size: 500px;
+    animation: handLines 4s ease-in-out infinite;
+  }
+  @keyframes handLines {
+    0%,
+    25%,
+    100% {
+      height: 0;
+    }
+    50% {
+      height: 100%;
+    }
+  }
