@@ -108,3 +108,24 @@ h2 {
     margin: -15px 0 10px;
     text-align: center;
   }
+  .forgot-password a {
+    font-size: 0.85em;
+    color: #fff;
+    text-decoration: none;
+  }
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+
+  .btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 45px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #1f293a;
+    font-weight: 600;
+  }
