@@ -5,3 +5,12 @@
     font-family: "Poppins";
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f293a;
+    min-height: 100vh;
+}
+
