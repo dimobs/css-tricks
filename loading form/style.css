@@ -35,3 +35,12 @@ body {
     animation: animateBlink 3s linear infinite;
     animation-delay: calc(var(--i) * (3s / 50));
 }
+@keyframes animateBlink {
+    0% {
+      background: #0ef;
+    }
+  
+    25% {
+      background: #2c4766;
+    }
+  }
