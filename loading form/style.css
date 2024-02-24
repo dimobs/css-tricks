@@ -134,3 +134,12 @@ h2 {
     margin: 20px 0 10px;
     text-align: center;
   }
+  .signup-link a {
+    font-size: 1em;
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
