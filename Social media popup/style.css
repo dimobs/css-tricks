@@ -56,7 +56,7 @@ body {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 1.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 
@@ -69,7 +69,7 @@ body {
     bottom: -3px;
     left: 50%;
     transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .wrapper .icon:hover .tooltip {
@@ -109,5 +109,12 @@ body {
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
   background: #833ab4;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #cd201f;
   color: #ffffff;
 }
