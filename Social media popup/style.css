@@ -104,3 +104,10 @@ body {
   background: #e4405f;
   color: #ffffff;
 }
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #833ab4;
+  color: #ffffff;
+}
