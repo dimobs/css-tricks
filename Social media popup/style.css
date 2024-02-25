@@ -97,3 +97,10 @@ body {
   background: #222222;
   color: #ffffff;
 }
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
