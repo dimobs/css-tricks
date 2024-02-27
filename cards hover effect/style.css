@@ -23,3 +23,25 @@ line-height: 1.2;
 background-color: #212121;
 color: #ddd;
 }
+
+ul {
+    list-style: none;
+}
+
+.main {
+    max-width: 75rem;
+    padding: 3em 1.5em;
+}
+
+.main__heading {
+    font-weight: 600;
+    font-size: 2.25em;
+    margin-bottom: 0.75em;
+    text-align: center;
+    color: #eceff1;
+}
+
+.cards {
+    position: relative;
+}
+
