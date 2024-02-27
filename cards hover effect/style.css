@@ -141,3 +141,29 @@ ul {
     transition: 400ms mask ease;
     will-change: mask;
   }
+
+  .overlay .card {
+    background-color: hsla(var(--hsl), 0.15);
+    border-color: hsla(var(--hsl), 1);
+    box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+  }
+
+  .overlay .cta {
+    display: block;
+    grid-row: -1;
+    width: 100%;
+    background-color: hsl(var(--hsl));
+    box-shadow: 0 0 0 1px hsl(var(--hsl));
+  }
+
+  :not(.overlay) > .card {
+    transition: 400ms background ease;
+    will-change: background;
+  }
+  
+  :not(.overlay) > .card:hover {
+    --lightness: 95%;
+    background: hsla(var(--hsl), 0.1);
+  }
+  
+  
