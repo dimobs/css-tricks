@@ -103,3 +103,23 @@ ul {
     font-size: 1.75em;
     font-weight: 700;
   }
+
+  .flow > * + * {
+    margin-top: var(--flow-space, 1.25em);
+  }
+
+  .cta {
+    display: block;
+    margin: 1em 0 0.5em 0;
+    align-self: end;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0d0d0d;
+    padding: 0.7em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  
