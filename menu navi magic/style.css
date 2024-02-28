@@ -85,3 +85,13 @@ body {
     transform: translateY(13px);
     opacity: 1;
   }
+
+  .indicator {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
