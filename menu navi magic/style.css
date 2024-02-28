@@ -60,3 +60,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.navigation ul li:hover a .icon {
+    color: rgba(255, 255, 255, 1);
+}
+
