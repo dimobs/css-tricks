@@ -26,3 +26,8 @@ body {
     border-radius: 10px;
 }
 
+.navigation ul {
+    position: relative;
+    display: flex;
+    width: 350px;
+}
