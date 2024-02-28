@@ -81,3 +81,7 @@ body {
     transform: translateY(0px);
 }
 
+.navigation ul li.active a .text {
+    transform: translateY(13px);
+    opacity: 1;
+  }
