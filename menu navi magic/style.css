@@ -51,3 +51,12 @@ body {
     font-weight: 500;
 }
 
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    line-height: 75px;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.5);
+}
+
