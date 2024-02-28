@@ -94,5 +94,14 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-    background: red;
 }
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    width: 80%;
+    height: 14px;
+    background: #29fd53;
+    border-radius: 10px;
+  }
