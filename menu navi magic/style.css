@@ -64,3 +64,10 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
+.navigation ul li.active a .icon {
+    transform: translateY(-8px);
+    color: #29fd53;
+}
+
+
+
