@@ -84,9 +84,9 @@ body {
 .navigation ul li.active a .text {
     transform: translateY(13px);
     opacity: 1;
-  }
+}
 
-  .indicator {
+.indicator {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -94,4 +94,5 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.5s;
-  }
+    background: red;
+}
