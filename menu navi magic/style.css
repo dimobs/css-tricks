@@ -119,3 +119,13 @@ body {
     transform: rotate(45deg);
     animation: animate 2s ease-in-out infinite;
   }
+
+  @keyframes animate {
+    0%,
+    100% {
+      transform: rotate(35deg);
+    }
+    50% {
+      transform: rotate(55deg);
+    }
+  }
