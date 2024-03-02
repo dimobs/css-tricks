@@ -52,4 +52,12 @@ footer .content .top {
     width: 40px;
     margin: 0 8px;
     border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    transition: all 1s ease;
+}
+.top .media-icons a:nth-child(1) {
+    background: #4267b2;
 }
