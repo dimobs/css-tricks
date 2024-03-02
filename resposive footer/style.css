@@ -136,3 +136,29 @@ footer .content .top {
   .content .link-boxes .input-box {
     margin-right: 55px;
   }
+  .link-boxes .input-box input {
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #afafb6;
+    background: #eaeaea;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #000000;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.5s;
+    outline: none;
+    letter-spacing: 0.15em;
+  }
+
+.link-boxes .input-box input[type="text"]:focus::placeholder  {
+    position: absolute;
+  transform: translateX(150px) translateY(-5px);
+  font-size: 0.6em;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+  opacity: 0;
+  transition: 2.5s;
+}
