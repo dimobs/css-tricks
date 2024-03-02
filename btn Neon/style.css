@@ -24,3 +24,7 @@ a {
     font-size: 1.25em;
 }
 
+a span {
+    position: relative;
+    z-index: 1;
+}
