@@ -55,3 +55,30 @@ body:has(.card[data-color="blue"]:hover) {
     z-index: 2;
   }
   
+  .card .card-image {
+    width: clamp(300px, 20vw, 500px);
+    aspect-ratio: 2 / 3;
+    border-radius: clamp(0.5rem, 0.75vw, 2rem);
+  }
+
+  .card-faders {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1500ms;
+    pointer-events: none;
+  }
+  
+  
+.card:hover .card-faders {
+    opacity: 1;
+  }
+
+  .card:active {
+    scale: 0.98;
+  }
+  
