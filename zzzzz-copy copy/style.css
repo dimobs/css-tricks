@@ -1,0 +1,37 @@
+:root {
+    --blue-rgb: 92 192 249;
+    --green-rgb: 125 161 35;
+    --brown-rgb: 127 46 23;
+  }
+
+  html, body {
+    background-color: black;
+  }
+
+  body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1000ms;
+  }
+
+  body:has(.card[data-color="blue"]:hover) {
+    background-color: rgb(var(--blue-rgb) / 25%);
+  }
+
+  
+body:has(.card[data-color="blue"]:hover) {
+    background-color: rgb(var(--blue-rgb) / 25%);
+  }
+  
+  body:has(.card[data-color="green"]:hover) {
+    background-color: rgb(var(--green-rgb) / 25%);
+  }
+  
+  body:has(.card[data-color="brown"]:hover) {
+    background-color: rgb(var(--brown-rgb) / 25%);
+  }
+  
