@@ -35,3 +35,23 @@ body:has(.card[data-color="blue"]:hover) {
     background-color: rgb(var(--brown-rgb) / 25%);
   }
   
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: scale 100ms;
+  }
+  
+  .card .card-front-image {
+    position: relative;
+    z-index: 2;
+  }
+  
