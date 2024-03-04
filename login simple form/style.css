@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #fff 50%, #bd002f 50%);
+}
+
+.login-form {
+    
+}
