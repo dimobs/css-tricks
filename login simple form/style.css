@@ -41,3 +41,31 @@ body {
     color: #fff;
     margin-bottom: 5px;
  }
+
+ .login-form .form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+    font-size: 15px;
+ }
+
+ .login-form.captcha {
+    margin: 15px 0;
+ }
+
+ .login-form .captcha .preview {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border: 1px dashed #bdbdbd;
+    font-family: "monospace";
+ }
+ .login-form .captcha .preview span {
+    display: inline-block;
+    user-select: none;
+ }
+
+ 
