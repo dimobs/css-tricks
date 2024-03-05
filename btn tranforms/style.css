@@ -62,3 +62,11 @@
   .button.active .content {
     transform: translateY(60px);
   }
+
+.button .content i,
+.button .content .button-text {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
