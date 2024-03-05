@@ -34,6 +34,17 @@
     height: 100%;
     width: 100%;
     background: #4c109f;
+    background: green;
     border-radius: 55px;
     transition: all 6s ease-in-out;
+  }
+
+  .button.active::before {
+    animation: layer 6s ease-in-out forwards;
+  }
+
+  @keyframes layer {
+    100% {
+      left: 0%;
+    }
   }
