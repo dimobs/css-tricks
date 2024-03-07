@@ -94,7 +94,7 @@ const createAlarm = (alarmObj) => {
   //Delete button
   let deleteButton = document.createElement("button");
   deleteButton.innerHTML = `
-  <i style='color:red'  class="fa-solid fa-trash-can"> Del</i>
+  <i style='color:red; display:flex; margin-right:25px; font-size: 16px; justify-content: top'  class="fa-solid fa-trash-can"><span style='margin-left: 5px;'>Del</span></i>
   `;
   deleteButton.classList.add("deleteButton");
   deleteButton.addEventListener("click", (e) => deleteAlarm(e));
