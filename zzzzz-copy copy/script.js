@@ -83,6 +83,7 @@ const createAlarm = (alarmObj) => {
   //checkbox
   let checkbox = document.createElement("input");
   checkbox.setAttribute("type", "checkbox");
+  checkbox.style.cssText = ';';
   checkbox.addEventListener("click", (e) => {
     if (e.target.checked) {
       startAlarm(e);
@@ -94,7 +95,7 @@ const createAlarm = (alarmObj) => {
   //Delete button
   let deleteButton = document.createElement("button");
   deleteButton.innerHTML = `
-  <i style='color:red; display:flex; margin-right:25px; font-size: 16px; justify-content: top'  class="fa-solid fa-trash-can"><span style='margin-left: 5px;'>Del</span></i>
+  <i style='color:red;  transition: all 150ms cubic-bezier(0, 0, 0, 0.1); display:flex; margin-right:25px; font-size: 16px; justify-content: top'  class="fa-solid fa-trash-can"><span style='margin-left: 5px;'>Del</span></i>
   `;
   deleteButton.classList.add("deleteButton");
   deleteButton.addEventListener("click", (e) => deleteAlarm(e));
