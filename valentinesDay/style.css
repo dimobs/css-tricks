@@ -49,3 +49,7 @@ body {
     margin-top: -60px;
     margin-left: -130px;
   }
+  #card #heart2 #circle,
+#card #heart2 #rec {
+  background-color: #fff;
+}
