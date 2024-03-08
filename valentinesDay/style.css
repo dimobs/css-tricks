@@ -76,3 +76,14 @@ body {
     margin-top: 60px;
     margin-left: 16px;
   }
+
+  #card #heart1 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-animation: closeLeft 2s ease-in-out forwards;
+    -moz-animation: closeLeft 2s ease-in-out forwards;
+    -ms-animation: closeLeft 2s ease-in-out forwards;
+    animation: closeLeft 2s ease-in-out forwards;
+  }
