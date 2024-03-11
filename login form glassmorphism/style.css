@@ -30,6 +30,11 @@
     align-items: center;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.5),
+      rgba(10, 10, 10, 0.5)
+    );
   }
   .login_box {
     position: relative;
