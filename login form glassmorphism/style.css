@@ -145,3 +145,7 @@
     cursor: pointer;
     transition: 0.3s;
   }
+
+  .input-submit:hover {
+    background: var(--second-color);
+  }
