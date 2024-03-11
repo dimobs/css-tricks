@@ -119,6 +119,7 @@
   border-radius: 30px;
   color: var(--black-color);
   padding: 0 10px;
+  transition: 0.5s;
 } 
 
 .icon {
@@ -156,4 +157,13 @@
 
   .register a {
     font-weight: 500;
+  }
+
+  @media only screen and (max-width: 564px) {
+    .wrapper {
+      padding: 20px;
+    }
+    .login_box {
+      padding: 7.5em 1.5em 4em 1.5em;
+    }
   }
