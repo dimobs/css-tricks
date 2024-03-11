@@ -65,5 +65,16 @@ a {
   .login-header span {
     font-size: 30px;
     color: var(--black-color);
+}
 
+.login-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-top-right-radius: 50%;
+    box-shadow: 15px 0 0 0 var(--primary-color);
 }
