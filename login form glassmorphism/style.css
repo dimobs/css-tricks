@@ -100,9 +100,24 @@
   #user {
     margin-bottom: 10px;
   }
+
   .label {
     position: absolute;
     top: 15px;
     left: 20px;
     transition: 0.2s;
   }
+
+  .input-field:focus ~ .label,
+.input-field:valid .label {
+  /* Added missing closing brace here */
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: var(--black-color);
+  padding: 0 10px;
+} 
+
