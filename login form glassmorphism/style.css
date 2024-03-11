@@ -18,3 +18,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+a {
+    text-decoration: none;
+    color: var(--second-color);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
