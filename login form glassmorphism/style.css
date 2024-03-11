@@ -110,3 +110,7 @@ a {
     border-radius: 30px;
     outline: none;
   }
+
+  #user {
+    margin-bottom: 10px;
+  }
