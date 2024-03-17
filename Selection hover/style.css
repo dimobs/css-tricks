@@ -39,3 +39,11 @@ body {
 .section .content {
     z-index: 2;
   }
+
+  .section:hover {
+    flex: 2;
+  }
+  
+  .section:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
