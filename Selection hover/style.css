@@ -24,10 +24,15 @@ body {
     background-size: cover;
     background-position: center;
     color: #fff;
-    transition: color 4.4s ease;
+    transition: color 2.4s ease;
     position: relative;
 }
 
 .section .overlay {
     background-color: rgba(0, 0,0, 0.7);
+    transition: background-color 4.4s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
 }
