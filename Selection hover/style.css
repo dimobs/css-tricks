@@ -30,9 +30,12 @@ body {
 
 .section .overlay {
     background-color: rgba(0, 0,0, 0.7);
-    transition: background-color 4.4s ease;
     width: 100%;
     height: 100%;
     position: absolute;
-
+    transition: background-color .8s ease;
 }
+
+.section .content {
+    z-index: 2;
+  }
