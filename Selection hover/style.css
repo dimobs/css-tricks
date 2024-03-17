@@ -14,4 +14,9 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: flex .4s ease;
+    position: relative;
 }
