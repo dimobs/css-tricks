@@ -10,13 +10,24 @@ body {
 
 .container {
     display: flex;
+    height: 100vh;
+    background: red;
+}
+
+.section {
+    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     color: #fff;
-    transition: flex .4s ease;
+    transition: color 4.4s ease;
     position: relative;
+}
+
+.section .overlay {
+    background-color: rgba(0, 0,0, 0.7);
 }
