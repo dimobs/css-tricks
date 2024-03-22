@@ -74,3 +74,7 @@ body {
     -webkit-box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
     box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
   }
+
+.btn__sass:hover::before {
+    height: 180%;
+  }
