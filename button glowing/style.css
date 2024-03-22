@@ -52,3 +52,8 @@ body {
     -o-transition: 100ms 300ms;
     transition: 100ms 300ms;
   }
+
+  .btn:hover {
+    border: 2px solid;
+    border-radius: 5px;
+  }
