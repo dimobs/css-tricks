@@ -126,3 +126,12 @@ body {
     -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
     box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
   }
+
+  .btn__css:hover::before {
+    height: 180%;
+  }
+
+  .btn__css:hover {
+    -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+    box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+  }
