@@ -43,3 +43,12 @@ body {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
+
+  .btn {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 100ms 300ms;
+    -o-transition: 100ms 300ms;
+    transition: 100ms 300ms;
+  }
