@@ -78,3 +78,34 @@ body {
 .btn__sass:hover::before {
     height: 180%;
   }
+
+  .btn__sass:hover {
+    -webkit-box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+    box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+  }
+
+  .btn__html::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #df4b25;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+    box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+  }
+
+  .btn__html:hover::before {
+    height: 180%;
+  }
+
+  .btn__html:hover {
+    -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+    box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+  }
