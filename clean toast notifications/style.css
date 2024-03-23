@@ -16,3 +16,23 @@
     inherits: false;
     initial-value: -10%;
 }
+@property --bg-success {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 145%;
+}
+@property --bg-warning {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: -55%;
+}
+@property --bg-error {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 112%;
+}
+@property --bsc {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: red;
+}
