@@ -36,3 +36,17 @@
     inherits: false;
     initial-value: red;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: radial-gradient(circle at 100% 80%, #b3cdd1, #a7b5c9);
+    font-family: "Varela Round", sans-serif;
+}
