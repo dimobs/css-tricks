@@ -10,3 +10,9 @@
     --ce1: #851d41;
     --ce2: #db3056;
 }
+
+@property --bg-help {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: -10%;
+}
