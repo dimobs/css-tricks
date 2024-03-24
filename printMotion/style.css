@@ -5,3 +5,12 @@ body {
     justify-content: center;
     background-color: #d8d899;
 }
+
+input#button {
+    /* display: none; */
+}
+
+.printer-animation, .printer {
+    position: relative;
+    top: -35px;
+}
