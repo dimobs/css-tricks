@@ -7,7 +7,7 @@ body {
 }
 
 input#button {
-    /* display: none; */
+    display: none;
 }
 
 .printer-animation, .printer {
@@ -25,5 +25,18 @@ input#button {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
-    box-shadow: inset 20px;
+    box-shadow: inset 20px 0 #373b3d;
 }
+
+.middle {
+    position: absolute;
+    background-color: #4a4f55;
+    border: 5px solid black;
+    width: 250px;
+    height:100px;
+    border-radius: 20px;
+    top:30px;
+    left:-130px;
+    box-shadow: inset 20px 0 #373b3d;
+    z-index:5;
+  }
