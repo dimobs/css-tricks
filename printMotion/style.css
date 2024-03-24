@@ -90,3 +90,19 @@ input#button {
     left: -65px;
     z-index:3;
   }
+
+  .button {
+    position: absolute;
+    z-index:30;
+    border-radius: 50%;
+    border: 5px solid black;
+    background-color: #fd6e49;
+    width:15px;
+    height: 15px;
+    left: 90px;
+    cursor: pointer;
+    top:45px;
+    animation: pulse 1.5s infinite;
+  }
+
+  
