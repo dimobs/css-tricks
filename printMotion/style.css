@@ -107,5 +107,12 @@ input#button {
 
   .button:active {
     background-color: #52dc97;
+  } 
+
+  input#button:checked ~ .paper {
+    animation: print 2.2s linear forwards;
   }
   
+    input#button:checked ~ .paper:before {
+    animation: display 2.2s linear forwards;
+  }
