@@ -80,4 +80,13 @@ input#button {
     box-shadow: 60px 0 black, 115px 0 black;
   }
 
-  
+  .paper {
+    position: absolute;
+    border: 5px solid black;
+    background-color: white;
+    width:120px;
+    height: 140px;
+    top:-70px;
+    left: -65px;
+    z-index:3;
+  }
