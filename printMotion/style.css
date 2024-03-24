@@ -14,3 +14,16 @@ input#button {
     position: relative;
     top: -35px;
 }
+
+.top {
+    position: absolute;
+    background-color:#282C30;
+    width: 160px;
+    height: 70px;
+    border-radius: 20px 20px 0 0;
+    border: 5px solid black;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: inset 20px;
+}
