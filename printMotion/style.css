@@ -134,3 +134,13 @@ input#button {
     95% {opacity:1; transform: scaleY(1);}
     100% {opacity:1; transform: scaleY(1);}
   }
+
+  .paper:before {
+    content:"Don't forget to smile :)";
+    position: absolute;
+    font-family: arial;
+    text-align: center;
+    top: 50px;
+    transform: scaleY(-1);
+    opacity:0;
+  }
