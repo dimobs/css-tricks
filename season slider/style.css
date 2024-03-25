@@ -59,3 +59,23 @@ border: 10px solid white;
   .r-button4 {
     left: 205px;
   }
+
+  input#spring:checked ~ .spring {
+    display: block;
+    z-index:1;
+  }
+  
+  input#summer:checked ~ .summer {
+    display: block;
+    z-index:1;
+  }
+  
+  input#autumn:checked ~ .autumn {
+    display: block;
+    z-index:1;
+  }
+  
+  input#winter:checked ~ .winter {
+    display: block;
+    z-index:1;
+  }
