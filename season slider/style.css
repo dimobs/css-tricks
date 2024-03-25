@@ -4,21 +4,21 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #40405a;
-}
-
-.four-seasons {
+  }
+  
+  .four-seasons {
     position: relative;
-}
-
-.window {
-position: relative;
-overflow: hidden;
-width: 330px;
-height: 250px;
-border: 10px solid white;
-}
-
-.r-button1, .r-button2, .r-button3, .r-button4 {
+  }
+  
+  .window {
+    position: relative;
+    overflow: hidden;
+    width: 330px;
+    height: 250px;
+    border: 10px solid white;
+  }
+  
+  .r-button1, .r-button2, .r-button3, .r-button4 {
     position: relative;
     display: block;
     border-radius: 50%; 
@@ -35,19 +35,19 @@ border: 10px solid white;
   .r-button1:before, .r-button2:before, .r-button3:before, .r-button4:before {
     content:"";
     position: absolute;
-    height: 7px;
-    width: 7px;
+    height:7px;
+    width:7px;
     background-color: transparent;
     transform: translate(-50%, -50%);
-    left: -50%;
-    top: 50%;
-    border-radius: 50%;
+    left:50%;
+    top:50%;
+    border-radius:50%;
   }
-
+  
   .r-button1 {
-    left: -115px;
+    left:115px;
   }
-
+  
   .r-button2 {
     left:145px;
   }
@@ -59,7 +59,7 @@ border: 10px solid white;
   .r-button4 {
     left: 205px;
   }
-
+  
   input#spring:checked ~ .spring {
     display: block;
     z-index:1;
@@ -79,13 +79,57 @@ border: 10px solid white;
     display: block;
     z-index:1;
   }
-
+  
   input {
-   /* opacity: 0;  */
-   cursor: pointer;
-   display: block;
-   position: absolute;
-   outline: none;
-   left: 0;
-   z-index: 10;
+    /* opacity: 0; */
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    outline: none;
+    left: 0;
+    z-index: 10;
+  }
+  
+  input[type=radio]:checked + label .r-button1:before {
+    background-color: #dad7cd;
+  }
+  input[type=radio]:checked:hover + label .r-button1:before {
+    background-color: #a3b18a;
+  }
+  
+  input[type=radio]:hover + label .r-button1 {
+    border-color: #a3b18a;
+  }
+  
+  input[type=radio]:checked + label .r-button2:before {
+    background-color: #dad7cd;
+  }
+  input[type=radio]:checked:hover + label .r-button2:before {
+    background-color: #a3b18a;
+  }
+  
+  input[type=radio]:hover + label .r-button2 {
+    border-color: #a3b18a;
+  }
+  
+  input[type=radio]:checked + label .r-button3:before {
+    background-color: #dad7cd;
+  }
+  input[type=radio]:checked:hover + label .r-button3:before {
+    background-color: #a3b18a;
+  }
+  
+  input[type=radio]:hover + label .r-button3 {
+    border-color: #a3b18a;
+  }
+  
+  input[type=radio]:checked + label .r-button4:before {
+    background-color: #dad7cd;
+  }
+  input[type=radio]:checked:hover + label .r-button4:before {
+    background-color: #a3b18a;
+  }
+  
+  input[type=radio]:hover + label .r-button4 {
+    border-color: #a3b18a;
   }
