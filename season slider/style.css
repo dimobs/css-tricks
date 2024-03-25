@@ -133,3 +133,27 @@ body {
   input[type=radio]:hover + label .r-button4 {
     border-color: #a3b18a;
   }
+
+  .spring, .summer, .autumn, .winter {
+    position: absolute;
+    width: 330px;
+    height: 250px;
+    transition: .3s;
+  }
+
+  .spring {
+    background-color: #00b4d8;
+  }
+  
+  .summer {
+    background-color: #48cae4;
+  }
+  
+  .autumn {
+    background-color: #61a5c2;
+  }
+  
+  .winter {
+    background-color: #caf0f8;
+  }
+  
