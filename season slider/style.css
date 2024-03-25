@@ -5,3 +5,16 @@ body {
     height: 100vh;
     background-color: #40405a;
 }
+
+.four-seasons {
+    position: relative;
+}
+
+.window {
+position: relative;
+overflow: hidden;
+width: 330px;
+height: 250px;
+border: 10px solid white;
+}
+
