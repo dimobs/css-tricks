@@ -32,3 +32,14 @@ border: 10px solid white;
     top:210px;
   }
   
+  .r-button1:before, .r-button2:before, .r-button3:before, .r-button4:before {
+    content:"";
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    left: -50%;
+    top: 50%;
+    border-radius: 50%;
+  }
