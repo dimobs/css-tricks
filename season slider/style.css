@@ -43,3 +43,19 @@ border: 10px solid white;
     top: 50%;
     border-radius: 50%;
   }
+
+  .r-button1 {
+    left: -115px;
+  }
+
+  .r-button2 {
+    left:145px;
+  }
+  
+  .r-button3 {
+    left: 175px;
+  }
+  
+  .r-button4 {
+    left: 205px;
+  }
