@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#57606f 1%, #2f3542 1%);
+    /* background: linear-gradient(green 50%, red 33%); */
+
+}
