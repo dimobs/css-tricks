@@ -138,6 +138,13 @@ label[for=btn] {
 
   #btn:checked + label .thumb {
     left: calc(calc(100% - calc(calc(var(--sz) * 2) - calc(var(--sz) / 3))) - calc(calc( var(--sz) / 10) + calc(var(--sz) / 7)));
-  
   }
+
+  #btn:checked + label .thumb:after {
+    animation: shine-thumb-on 0.5s ease 0s 1;
+    animation-fill-mode: forwards;
+    transition: var(--tr);
+    transition-property: --lg;
+  }
+  
   
