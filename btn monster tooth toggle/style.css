@@ -147,4 +147,9 @@ label[for=btn] {
     transition-property: --lg;
   }
   
+  @keyframes shine-thumb-on {
+    0% { --lg: var(--of); }
+    50% { --lg: var(--gr); }
+    100% { --lg: var(--on); }
+  }
   
