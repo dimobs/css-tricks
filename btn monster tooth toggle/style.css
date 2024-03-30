@@ -48,7 +48,7 @@ body::before, body::after {
 }
 
 input {
-    /* display: none; */
+    display: none;
 }
 
 label[for=btn] {
@@ -76,4 +76,37 @@ label[for=btn] {
 
   #btn:checked + label .track:before {
     left: 0%;
+  }
+
+  
+.thumb {
+    position: absolute;
+    width: calc(calc(var(--sz) * 2) - calc(var(--sz) / 5));
+    height: calc(calc(var(--sz) * 2) - calc(var(--sz) / 5));
+    top: calc(calc( var(--sz) / 10) + calc(var(--sz) / 200));
+    left: calc(calc( var(--sz) / 10) + calc(var(--sz) / 100));
+    background: linear-gradient(180deg,  #3f4447, #262727);
+    border-radius: var(--sz);
+    box-shadow: calc(var(--sz) / -25) calc(var(--sz) / 25) calc(var(--sz) / 30) 0 #fff2 inset, 0 0 calc(var(--sz) / 10) calc(var(--sz) / 50) #000c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    animation: move-thumb 0.5s ease 0s;
+  }
+  
+  @keyframes move-thumb {
+    0% { 
+      --lg: var(--of);
+      left: calc(calc(100% - calc(calc(var(--sz) * 2) - calc(var(--sz) / 3))) - calc(calc( var(--sz) / 10) + calc(var(--sz) / 7))); 
+    }
+    25%, 75% { 
+      --lg: #999999; 
+    }
+    100% { 
+      --lg: var(--on);
+      left: calc(calc( var(--sz) / 10) + calc(var(--sz) / 100)); 
+    }
   }
