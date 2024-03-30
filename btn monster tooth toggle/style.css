@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');    
+
+:root {
+  --sz: 9vmin;
+  --on: #4CAF50;
+  --of: #f50000;
+  --gr: #666666;
+  --tr: all 0.5s ease 0s;
+  --lg: var(--of);
+}    
+
+* {
+  box-sizing: border-box;
+  transition: var(--tr);
+}
