@@ -135,3 +135,9 @@ label[for=btn] {
     animation: shine-thumb-off 0.5s ease 0s 1;
     animation-fill-mode: forwards;
   }
+
+  #btn:checked + label .thumb {
+    left: calc(calc(100% - calc(calc(var(--sz) * 2) - calc(var(--sz) / 3))) - calc(calc( var(--sz) / 10) + calc(var(--sz) / 7)));
+  
+  }
+  
