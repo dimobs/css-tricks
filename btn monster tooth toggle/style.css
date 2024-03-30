@@ -64,3 +64,16 @@ label[for=btn] {
       0 -4px calc(var(--sz) / 5) calc(var(--sz) / 50) #000c;
   }    
   
+  .track {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--sz);
+    overflow: hidden;
+    background: #191e1e;
+    box-shadow: 0 calc(var(--sz) / 3) calc(var(--sz) / 2) 0 #000 inset;
+  }
+
+  #btn:checked + label .track:before {
+    left: 0%;
+  }
