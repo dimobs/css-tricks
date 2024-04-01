@@ -135,3 +135,40 @@ border: 1px solid #eb7b1b;
     padding: 0 30px;
     display: flex;
   }
+
+  .tea-smoke span {
+    width: 2px;
+    height: 100px;
+    background: linear-gradient(to left, #d4d4d429, #f7e0cca3);
+    display: block;
+    border-radius: 50%;
+    animation: spear-smoke 5s linear infinite;
+    opacity: 0;
+    filter: blur(8px);
+    padding: 0 10px;
+    animation-delay: calc(var(--i) * -0.5s);
+  }
+
+    
+  @keyframes spear-smoke {
+    0% {
+      transform: translateY(-40px) scaleX(1);
+    }
+    20% {
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-100px) scaleX(4);
+      background: linear-gradient(to left, #ffffff29, rgba(233, 202, 182, 0.64));
+    }
+    80% {
+      transform: translateY(-180px) scaleX(6);
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-300px) scaleX(8);
+    }
+  }
+  
