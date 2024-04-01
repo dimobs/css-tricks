@@ -94,3 +94,44 @@ body {
     border-radius: 50%;
     z-index: -1;
   }
+
+  .cup-platte::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: linear-gradient(to left, #e7e7e7, #efeaea);
+    border-radius: 50%;
+    border: 2px dotted #fcaa61;
+  }
+
+  .cup-platte::after {
+content: "";
+position: absolute;
+background: linear-gradient(ro right, green, red);
+top:10px;
+bottom: 20px;
+right: 5px;
+left: 15px;
+border-radius: 50%;
+border: 1px solid #eb7b1b;
+  }
+
+  .cup-platte::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 15px;
+    left: 15px;
+    right: 30px;
+    background: radial-gradient(#66666666 30%, transparent, transparent);
+    border-radius: 50%;
+  }
+  .tea-smoke {
+    position: relative;
+    z-index: 1;
+    padding: 0 30px;
+    display: flex;
+  }
