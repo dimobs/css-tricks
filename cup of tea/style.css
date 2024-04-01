@@ -12,3 +12,7 @@ body {
     min-height: 100dvh;
 }
 
+.tea-cup-container {
+    position: relative;
+}
+
