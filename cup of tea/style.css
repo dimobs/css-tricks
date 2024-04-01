@@ -47,4 +47,24 @@ body {
     border-radius: 50%;
   }
 
-  
+  .circle {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    height: 50px;
+    width: calc(100% - 20px);
+    background: linear-gradient(to left, #fdfdfd, #ededed);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .tea {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background: linear-gradient(to left, #eb7b1b, #ffb370);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    animation: tea-move 3s linear infinite alternate;
+  }
