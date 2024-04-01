@@ -82,3 +82,15 @@ body {
       transform: scale(1.1, 1.1);
     }
   }
+
+  .cup-platte {
+    position: absolute;
+    left: -100px;
+    bottom: -40px;
+    background: linear-gradient(to left, #ede0e0, #ffffff);
+    box-shadow: 2px 2px 20px #f0e5e529;
+    width: 500px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -1;
+  }
