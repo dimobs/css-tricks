@@ -37,3 +37,14 @@ body {
     border-bottom: 25px solid transparent;
     transform: rotate(45deg);
   }
+  .top-shape {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to right, #fdfdfd, #ede5e5);
+    border-radius: 50%;
+  }
+
+  
