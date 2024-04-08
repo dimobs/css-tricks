@@ -1,0 +1,23 @@
+body {
+display: flex;
+height: 100vh;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+justify-content: start;
+align-items: center;
+    background: 
+    linear-gradient(to right,
+     rgb(0 0 0 / 0.4), 
+     rgb(0 0 0 / 0)
+     ), 
+     url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Brazilian_View.jpg')
+     ;
+}
+
+div {
+    width: 350px;
+    flex:start;
+    color: white;
+}
+
