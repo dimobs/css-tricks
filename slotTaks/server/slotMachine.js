@@ -1,3 +1,4 @@
+
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var SlotMachine = /** @class */ (function () {
@@ -39,8 +40,8 @@ var SlotMachine = /** @class */ (function () {
     };
     return SlotMachine;
 }());
-// Example usage
-var configuration_1 = require("./configuration"); // Assuming config file is in the same directory
+
+var configuration_1 = require("./configuration");
 var slotMachine = new SlotMachine(configuration_1.default);
 var result = slotMachine.spin();
 var payout = slotMachine.calculatePayout(result);
