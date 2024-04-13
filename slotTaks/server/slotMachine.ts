@@ -24,7 +24,7 @@ class SlotMachine {
 
         for (let i = 0; i < this.config.reelsCount; i++) {
             const reel = this.config.reels[i];
-            const randomIndex = Math.floor(Math.random() * reel.length);
+            const randomIndex = Math.floor(Math.random() * reel.length);            
             result.push(reel.slice(randomIndex).concat(reel.slice(0, randomIndex)));
         }
 
