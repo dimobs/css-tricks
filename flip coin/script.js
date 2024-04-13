@@ -1,11 +1,14 @@
 let heads = 0;
 let tails = 0;
+let tempI = 0;
 let coin = document.querySelector(".coin");
 let flipBtn = document.querySelector("#flip-button");
 let resetBtn = document.querySelector("#reset-button");
 
 flipBtn.addEventListener("click", () => {
     let i = Math.floor(Math.random() * 2);
+    console.log(i);
+    tempI += i;
     coin.style.animation = "none";
     if(i){
         setTimeout(function(){
@@ -25,6 +28,7 @@ flipBtn.addEventListener("click", () => {
 function updateStats(){
     document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
     document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
+    document.querySelector("i").textContent = `i: ${tempI.toFixed(5)}`;
 }
 function disableButton(){
     flipBtn.disabled = true;
