@@ -1,3 +1,5 @@
+const { clearTimeout } = require("timers");
+
 let heads = 0;
 let tails = 0;
 let tempI = 0;
@@ -7,7 +9,6 @@ let resetBtn = document.querySelector("#reset-button");
 
 flipBtn.addEventListener("click", () => {
     let i = Math.floor(Math.random() * 2);
-    console.log(i);
     tempI += i;
     coin.style.animation = "none";
     if(i){
@@ -41,4 +42,17 @@ resetBtn.addEventListener("click",() => {
     heads = 0;
     tails = 0;
     updateStats();
+
+
 });
+
+for (let index = 0; index < 3; index++) {  
+    autoFlip();    
+}
+
+function autoFlip() {
+    setInterval(() => {
+        flipBtn.click();
+    }, 3000);
+}
+

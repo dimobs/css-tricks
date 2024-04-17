@@ -1,0 +1,11 @@
+:root {
+    --w: #fafafa;
+    --b: #141414;
+    --s: 1s;
+    --d: calc(var(--s) / 6);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
