@@ -16,7 +16,7 @@
     height: 100vh;
     overflow: hidden;
   }
-
+  
   input {
     width: 100vw;
     height: 100vh;
@@ -25,15 +25,13 @@
     opacity: 0;
     cursor: pointer;
   }
-
-  input:checked ~div {
+  input:checked ~ div {
     filter: invert(1);
   }
-
   input:checked + .bg:before {
     content: "CLICK FOR DARK";
   }
-
+  
   .bg:before {
     content: "CLICK FOR LIGHT";
     position: absolute;
@@ -43,11 +41,11 @@
     bottom: 10vh;
     font-family: Arial, Helvetica, serif;
     font-size: 12px;
-    text-shadow: 1px 0px 1px var(--w);
+    text-shadow: 0 0 1px var(--w);
     opacity: 0.25;
   }
-
-  .body, .dots {
+  
+  body, .dots {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,14 +58,13 @@
     background: var(--b);
     z-index: -2;
   }
-
+  
   .dots {
     width: 50vmin;
     height: 50vmin;
     position: relative;
   }
   
-
   .ring {
     border: 1.5vmin solid var(--w);
     width: 64%;
@@ -76,7 +73,7 @@
     z-index: 0;
     box-shadow: 0 0 0 1vmin var(--b), 0 0 0 1vmin var(--b) inset;
   }
-
+  
   .dot {
     width: 50%;
     position: absolute;
@@ -86,7 +83,6 @@
     z-index: -1;
     animation: over-ring calc(var(--s) * 2) linear 0s infinite, spin calc(var(--s) * 8) linear 0s infinite;
   }
-
   .dot:before {
     content: "";
     width: 5.5vmin;
@@ -99,7 +95,6 @@
     border-radius: 100%;
     animation: ball var(--s) ease-in-out 0s infinite alternate;
   }
-
   .dot:nth-child(1) {
     animation-delay: calc(var(--d) * 0), calc(var(--d) * 0);
   }
@@ -185,7 +180,6 @@
       height: 4vmin;
     }
   }
-
   @keyframes over-ring {
     0%, 50% {
       z-index: -1;
