@@ -76,3 +76,27 @@
     z-index: 0;
     box-shadow: 0 0 0 1vmin var(--b), 0 0 0 1vmin var(--b) inset;
   }
+
+  .dot {
+    width: 50%;
+    position: absolute;
+    height: 7vmin;
+    left: 0;
+    transform-origin: 100% 50%;
+    z-index: -1;
+    animation: over-ring calc(var(--s) * 2) linear 0s infinite, spin calc(var(--s) * 8) linear 0s infinite;
+  }
+
+  .dot:before {
+    content: "";
+    width: 5.5vmin;
+    height: 5.5vmin;
+    left: 0;
+    box-sizing: border-box;
+    border: 1vmin solid var(--b);
+    position: absolute;
+    background: var(--w);
+    border-radius: 100%;
+    animation: ball var(--s) ease-in-out 0s infinite alternate;
+  }
+  
