@@ -173,5 +173,24 @@
     animation-delay: calc(var(--d) * -11);
   }
   
-  
-  
+  @keyframes spin {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes ball {
+    100% {
+      left: 12vmin;
+      width: 4vmin;
+      height: 4vmin;
+    }
+  }
+
+  @keyframes over-ring {
+    0%, 50% {
+      z-index: -1;
+    }
+    51%, 100% {
+      z-index: 1;
+    }
+  }
