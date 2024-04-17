@@ -60,3 +60,19 @@
     background: var(--b);
     z-index: -2;
   }
+
+  .dots {
+    width: 50vmin;
+    height: 50vmin;
+    position: relative;
+  }
+  
+
+  .ring {
+    border: 1.5vmin solid var(--w);
+    width: 64%;
+    height: 64%;
+    border-radius: 100%;
+    z-index: 0;
+    box-shadow: 0 0 0 1vmin var(--b), 0 0 0 1vmin var(--b) inset;
+  }
