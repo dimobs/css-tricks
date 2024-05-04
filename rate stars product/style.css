@@ -130,3 +130,14 @@ legend {
     opacity: 0;
     transition: opacity 0.25s ease;
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rate-radio svg {
+      transform: none;
+      transition: transform 0.5s ease-in-out;
+    }
+    .rate-radio span {
+      transform: translateY(0.5em) translateX(-50%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+  }
