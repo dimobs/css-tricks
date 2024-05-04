@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.rate-radios {
+    width: 800px;
+    height: 800px;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+}
