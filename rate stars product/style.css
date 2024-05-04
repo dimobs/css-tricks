@@ -40,5 +40,9 @@ legend {
     font-weight: 700;
     text-align: center;
     color: var(--purple-core);
-    border: 3px solid black;
+}
+
+#avatar {
+    margin: 0px auto 1.5em;
+    width: 200px;
 }
