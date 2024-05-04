@@ -116,3 +116,17 @@ legend {
     transform: translateY(0.5em) translateX(-50%) scale(0);
     transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
   }
+
+  .rate-radio span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--purple-core);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
