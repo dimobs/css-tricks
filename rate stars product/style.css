@@ -9,3 +9,16 @@ body, html {
 body * {
     box-sizing: border-box;
   }
+
+  :root {
+    --purple-bare: #F8EDFF;
+    --purple-light: #e7cafa;
+    --purple-core: #7E26C8;
+    --purple-dark: #62457a;
+    --red: #e3468a;
+    --red-dark: #9e1852;
+    --gold: #faf18f;
+  }
+
+
+  
