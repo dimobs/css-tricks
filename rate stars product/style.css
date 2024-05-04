@@ -72,3 +72,29 @@ legend {
     appearance: none;
     opacity: 0.0001;
   }
+
+  .rate-radio {
+    margin: 0 0.5em 0 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color: #2a2a2a;
+    line-height: 1;
+  }
+
+  .rate-radio:last-of-type {
+    margin-right: 0;
+  }
+
+  .rate-radio svg {
+  display: block;
+  width: 3em;
+  height: 2.85em;
+  fill: var(--purple-bare);
+  stroke: #000;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  transform: scale(0.625);
+  transition: transform 0.2s ease-in-out;
+  overflow: visible;
+}
