@@ -141,3 +141,71 @@ legend {
       transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     }
   }
+
+  .rate-radio--none svg {
+    width: 2.85em;
+    height: 2.85em;
+    fill: #FFF;
+    stroke: var(--red-dark);
+  }
+  input:focus + .rate-radio {
+    outline: dotted 0.25em #CCC;
+    outline-offset: 0.5em;
+  }
+  fieldset:not([disabled]) input:not([disabled]):hover + .rate-radio span,
+  .rate-radio:hover span,
+  input:focus + .rate-radio span {
+    opacity: 1;
+    transform: translateY(0.5em) translateX(-50%) scale(1);
+  }
+  fieldset:not([disabled]) input:not([disabled]):checked + .rate-radio span,
+  .rate-radio:checked span,
+  input:checked + .rate-radio span {
+    opacity: 1;
+    background: var(--purple-core);
+    transform: translateY(0.5em) translateX(-50%) scale(1);
+  }
+  fieldset:not([disabled]) input:not([disabled]):checked + .rate-radio span::before,
+  .rate-radio:checked span::before,
+  input:checked + .rate-radio span::before {
+    opacity: 1;
+  }
+  input:checked + .rate-radio span {
+    background: #333;
+    border: 2px solid var(--purple-dark);
+  }
+  input:checked ~ .rate-radio svg {
+    fill: var(--purple-bare);
+    transform: scale(0.625);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    input:checked ~ .rate-radio svg {
+      transform: none;
+    }
+  }
+  input:not(:checked) ~ .rate-radio--none svg {
+    fill: var(--purple-dark);
+    transform: scale(0.625);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    input:not(:checked) ~ .rate-radio--none svg {
+      transform: none;
+    }
+  }
+  .rate-radio svg,
+  input:checked + .rate-radio svg {
+    fill: var(--gold);
+    stroke: var(--purple-dark);
+    transform: scale(1) translateY(-0.25em);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rate-radio svg,
+  input:checked + .rate-radio svg {
+      transform: none;
+    }
+  }
+  input:checked + .rate-radio--none svg {
+    fill: var(--red);
+    stroke: var(--red-dark);
+    transform: scale(1);
+  }
