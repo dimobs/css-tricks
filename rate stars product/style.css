@@ -32,3 +32,13 @@ body * {
     overflow: visible;
   }
 
+legend {
+    margin: 0 0 1.5em;
+    display: block;
+    width: 100%;;
+    font-size: 1.25em;
+    font-weight: 700;
+    text-align: center;
+    color: var(--purple-core);
+    border: 3px solid black;
+}
