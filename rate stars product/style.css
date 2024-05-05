@@ -192,6 +192,7 @@ legend {
       transform: none;
     }
   }
+  
   .rate-radio svg,
   input:checked + .rate-radio svg {
     fill: var(--gold);
