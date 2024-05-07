@@ -49,3 +49,19 @@ button:focus,
   --apple-background: #ffb2b2;
   --exotic-background: #c1bff2;
 }
+
+h1 {
+  font-family: "Lexend";
+  font-size: 449px !important;
+  line-height: normal !important;
+  color: var(--white-color) !important;
+  margin: 0 !important;
+}
+
+h2 {
+  font-family: "Lexend";
+  font-size: 40px;
+  line-height: normal;
+  margin: 0;
+  font-weight: 900;
+}
