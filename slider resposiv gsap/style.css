@@ -14,3 +14,9 @@ img {
 body {
   overflow: hidden;
 }
+
+a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
