@@ -65,3 +65,13 @@ h2 {
   margin: 0;
   font-weight: 900;
 }
+
+header {
+  padding: 22px 28px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  text-align: center;
+}
