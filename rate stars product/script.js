@@ -1,4 +1,4 @@
-console.clear();
+wconsole.clear();
 
 /* selector functions */
 const $ = (s, o = document) => o.querySelector(s);

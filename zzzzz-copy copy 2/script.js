@@ -283,20 +283,56 @@
 
 // console.log(countingInversions([50,20,5,70,30,15,11,18])[0]);
 
-arr = [0, 2, 5, 9, 7, 1, 6, 3, 8, 4];
+// arr = [0, 2, 5, 9, 7, 1, 6, 3, 8, 4];
  
-function getInvCount(arr){
-    let inv_count = 0;
-    for(let i=0; i<arr.length-1; i++){
-        for(let j=i+1; j<arr.length; j++){
-            console.log(arr[i], '=>', arr[j]);
-            if(arr[i] > arr[j]) console.log('has inversion');;
-            if(arr[i] > arr[j]) inv_count++;
-        }
-    }
-    return inv_count;
-}
+// function getInvCount(arr){
+//     let inv_count = 0;
+//     for(let i=0; i<arr.length-1; i++){
+//         for(let j=i+1; j<arr.length; j++){
+//             console.log(arr[i], '=>', arr[j]);
+//             if(arr[i] > arr[j]) console.log('has inversion');;
+//             if(arr[i] > arr[j]) inv_count++;
+//         }
+//     }
+//     return inv_count;
+// }
  
-// function call
-console.log("Number of inversions are "+ getInvCount(arr));
+// // function call
+// console.log("Number of inversions are "+ getInvCount(arr));
 
+// function decToRoman(deciamal) {
+
+//     dec_rom=[
+//         [1, 'I'],
+//         [4, 'IV'],
+//         [5, 'V'],
+//         [9, 'IX'],
+//         [10, 'X'],
+//         [40, 'XL'],
+//         [50, 'L'],
+//         [90, 'XC'],
+//         [100, 'C'],
+//         [400, 'CD'],
+//         [500, 'D'],
+//         [900, 'CM'],
+//         [1000, 'M'],
+//     ]
+
+//     let result = "";
+
+//     for (let i=14;  i>=2; i--) {
+//         while (deciamal >= dec_rom[i-2][0])
+//         console.log(deciamal, dec_rom[i-2][1] - dec_rom[i][0]);
+//     }
+    
+// }
+
+// decToRoman(1005)
+let array = [1,2,3]
+let i = 0
+
+for (let j = 1; j < array.length - (i-1); j++) {
+    console.log(j);
+    i++
+}
+console.log('end');
