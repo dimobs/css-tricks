@@ -69,3 +69,37 @@ body {
     transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
     z-index: -2;
 }
+
+.items .item:hover + * + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(30deg);
+    z-index: -3;
+}
+
+.items .item:hover + * + * + * + *{
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(15deg);
+    z-index: -4;
+}
+
+
+
+.items .item:has( + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
+}
+
+.items .item:has( + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
+}
+
+.items .item:has( + * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * 2.5)) rotateY(-30deg);
+}
+
+.items .item:has( + * + * + * + :hover){
+    filter: inherit;
+    transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
+}
