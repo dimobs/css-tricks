@@ -103,3 +103,10 @@ body {
     filter: inherit;
     transform: translateZ(calc(var(--index) * .6)) rotateY(-15deg);
 }
+.items .item:active, .items .item:focus {
+    width: 28vw;
+    filter: inherit;
+    z-index: 100;
+    transform: translateZ(calc(var(--index) * 10));
+    margin: 0 .45vw;
+}
