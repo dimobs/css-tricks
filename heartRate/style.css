@@ -14,4 +14,13 @@ body {
 }
 .wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.items {
+    display: flex;
+    gap: 0.4rem;
+    perspective: calc(var(--index) * 35);
 }
