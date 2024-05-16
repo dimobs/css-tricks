@@ -6,5 +6,12 @@
 
 :root {
     --index: calc(1vw + 1vh);
-    -o-transition: cubic-bezier(.1, .7, 0, 1);
+    --transition: cubic-bezier(.1, .7, 0, 1);
+}
+
+body {
+    background-color: #282A36;
+}
+.wrapper {
+    display: flex;
 }
