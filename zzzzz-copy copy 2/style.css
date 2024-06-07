@@ -57,5 +57,34 @@
     text-align: center;
     color: rgb(65, 69, 85);
     max-width: 500px;
-    margin: 80px 0 0;
+    margin: 80px 0px 0px;
+  }
+
+  .space {
+    height: 400vh;
+  }
+
+  @media (max-width: 500px) {
+    .cards {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    h2 {
+      font-size: 38px;
+    }
+  
+    .scroll-icon {
+      width: 100px;
+    }
+  
+    body {
+      background: radial-gradient(
+        circle,
+        hsl(230, 20%, 70%) 50%,
+        rgba(239, 239, 244, 1) 100%
+      );
+    }
   }
