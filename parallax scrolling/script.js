@@ -328,11 +328,48 @@
 // }
 
 // decToRoman(1005)
-let array = [1,2,3]
-let i = 0
+// let array = [1,2,3]
+// let i = 0
 
-for (let j = 1; j < array.length - (i-1); j++) {
-    console.log(j);
-    i++
-}
-console.log('end');
+// for (let j = 1; j < array.length - (i-1); j++) {
+//     console.log(j);
+//     i++
+// }
+// console.log('end');
+
+class ParallaxCard {
+    constructor(cardEl) {
+      this.cardEl = cardEl
+      this.imageWrapper = cardEl.querySelector('.card__image-wrapper')
+  
+      this.heightDiff = this.imageWrapper.clientHeight - this.cardEl.clientHeight
+    }
+  
+    update() {
+      const boundingRect = this.cardEl.getBoundingClientRect()
+      const topOffset = boundingRect.y
+      const progress = topOffset / window.innerHeight
+      const offset = this.heightDiff * progress * -1
+      this.imageWrapper.style.transform = `translate(0, ${offset}px)`
+    }
+  }
+  
+  function initCardParallax() {
+    const cardEls = document.querySelectorAll('.card')
+   Array.from(cardEls).map((cardEl) => console.log('aaaa', cardEl));
+    const cards = Array.from(cardEls).map((cardEl) => new ParallaxCard(cardEl))
+  
+    function update() {
+      cards.forEach((card) => card.update())
+    }
+    
+    function onScroll() {
+      requestAnimationFrame(update)
+      console.log('scrolling...');
+    }
+  
+    window.addEventListener('scroll', onScroll)
+    requestAnimationFrame(update)
+  }
+  
+  initCardParallax()
