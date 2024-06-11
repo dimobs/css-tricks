@@ -166,3 +166,14 @@ backdrop-filter: blur(8px);
     transition: all 0.3s linear;
   }
   
+  .controls button:is(:hover, :focus-visible) {
+    transform: scale(0.96);
+  }
+
+  .controls button:nth-child(2) {
+    transform: scale(1.3);
+  }
+
+  .controls button:nth-child(2):is(:hover, :focus-visible) {
+    transform: scale(1.25);
+  }
