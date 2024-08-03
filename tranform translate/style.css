@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+width: auto;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: palegoldenrod;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+.box:nth-child(1):hover{
+    background-color: antiquewhite;
+transform: matrix(0, 1, 1, 0, 0, 0);
+}
+.box:nth-child(2):hover{
+    background-color: red;
+    transform: translate(-5px, 20px);
+transition: cubic-bezier(0.075, 0.82, 0.165, 1) inherit 1s;   
+}
+
+.container:has(.box:hover)>div:not(:hover) {
+    opacity: 0.2;;
+}
