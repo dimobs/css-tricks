@@ -100,3 +100,40 @@ background: red;
     background-size: 100% 100%;
     transform: translateZ(100px);
 }
+
+.maxbox li:nth-child(2) {
+    transform: rotateX(180deg) translateZ(100px);
+    background-size: 100% 100%;
+}
+
+.maxbox li:nth-child(3) {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-size: 100% 100%;
+}
+
+.maxbox li:nth-child(4) {
+    transform: rotateX(90deg) translateZ(100px);
+    background-size: 100% 100%;
+}
+
+.maxbox li:nth-child(5) {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-size: 100% 100%;
+}
+
+.maxbox li:nth-child(6) {
+    transform: rotateY(90deg) translateZ(100px);
+    background-size: 100% 100%;
+}
+
+.maxbox li:nth-child(4) {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.maxbox li:nth-child(5) {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.maxbox li:nth-child(6) {
+    transform: rotateY(90deg) translateZ(100px);
+}
